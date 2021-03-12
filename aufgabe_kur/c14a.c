@@ -30,7 +30,7 @@ int main()
     //Aufgabe 2
     //Variable deklaration
     int U0, fu, Bmin;
-    double Ptot, R1, IQ, UR1, UR2, UCE, IB, Ic, UR4, C1, R2, R3, R4, UR3, C2, C3, IBmax, PR1, PR2, PR3, PR4, IR1,IR4; 
+    double Ptot, R1, IQ, UR1, UR2, UCE, IB, Ic, UR4, C1, R2, R3, R4, UR3, C2, C3, IBmax, PR1, PR2, PR3, PR4, IR1, IR2, IR3,IR4; 
     const double pi=3.14159265;
 
     //Wert Eingabe
@@ -58,18 +58,18 @@ int main()
     R2=UR2/IQ;
     C1=C2=1./(2*pi*fu*(R1*R2/(R1+R2)));
     C3=1./(2*pi*fu*R4);
-    IR1=IBmax+IQ;
-    PR1=UR1*IR1;
-    PR2=UR2*IQ;//IR2=IQ;
+    IR2=IQ-IBmax;
+    PR1=UR1*IQ;//IQ=IR1
+    PR2=UR2*IR2;;
     PR3=UR3*Ic;//IR3=Ic;
-    IR4=UR4/UR4;
+    IR4=UR4/R4;
     PR4=UR4*IR4;
 
-    printf("\nR1 = %g \u03A9; UR1 = %g V; IR1 = %g A; PR1 = %g W\n",R1,UR1,IR1,PR1);
-    printf("R2 = %g \u03A9; UR2 = %g V; IR2 = %g A; PR2 = %g W\n",R2,UR2,IQ/*IR2=IQ*/,PR2);
+    printf("\nR1 = %g \u03A9; UR1 = %g V; IR1 = %g A; PR1 = %g W\n",R1,UR1,IQ/*IR1=IQ*/,PR1);
+    printf("R2 = %g \u03A9; UR2 = %g V; IR2 = %g A; PR2 = %g W\n",R2,UR2,IR2,PR2);
     printf("R3 = %g \u03A9; UR3 = %g V; IR3 = %g A; PR3 = %g W\n",R3,UR3,Ic/*IR3=Ic*/,PR3);
     printf("R4 = %g \u03A9; UR4 = %g V; IR4 = %g A; PR4 = %g W\n",R4,UR4,IR4,PR4);
-    printf("\n C1 = %e F, C2 = %e F, C3 = %e F\n",C1,C2,C3);
+    printf("\nC1 = %e F, C2 = %e F, C3 = %e F\n",C1,C2,C3);
     printf("IBmax = %g A, UCE = %g V\n",IBmax,UCE);
 
     return 0;
