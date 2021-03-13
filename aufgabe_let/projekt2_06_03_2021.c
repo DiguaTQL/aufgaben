@@ -16,16 +16,16 @@ int main ()
     printf("Z2 = %g \u03A9 + j (%g) \u03A9 \n", creal(Z2), cimag(Z2));
     printf("Z2  = %g \u03A9 + exp(j * %g°) \n", creal(Z2), carg(Z2)/PI*180.0);
 
-    // Berechung in Paralleschaltung
+    // Berechung in Reihenschaltung
     R2r=creal(Z2);
     C2r=1/(-cimag(Z2)*w);//mit Kondesator
-    printf("R2r = %g \u03A9; L2r = %g F\n", R2r, C2r );
+    printf("In Reihenschaltung : R2r = %g \u03A9; L2r = %g F\n", R2r, C2r );
 
 	// Berechung in Paralleschaltung
 	Y2=1/Z2;
 	R2p=1/creal(Y2);
 	C2p=cimag(Y2)/w;//mit Kondesator
-    printf("R2p = %g \u03A9; L2p = %g F\n", R2p, C2p );
+    printf("In Paralleschaltung : R2p = %g \u03A9; L2p = %g F\n", R2p, C2p );
 
 
     return 0;
