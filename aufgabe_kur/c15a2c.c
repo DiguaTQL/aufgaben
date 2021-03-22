@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(){
+int main(void)
+{
 
     int x;
 
@@ -9,10 +10,10 @@ int main(){
 
     if (x%2== 0)
     {
-        printf("Eingebegend x ist ein gerad Zahl.\n");
+        printf("Eingebegend x ist ein gerade Zahl.\n");
     }
     else {
-        printf("Eingebegend x ist ein ungerad Zahl.\n");
+        printf("Eingebegend x ist ein ungerade Zahl.\n");
     }
 
     if (x>0)
@@ -20,10 +21,10 @@ int main(){
         printf("Eingebegend x ist ein positive Zahl.\n");
     }
     else if (x==0) {
-    printf("Eingebegend x ist gleich Null.\n");
+        printf("Eingebegend x ist gleich Null.\n");
     }
     else {
-    printf("Eingebegend x ist ein negative Zahl.\n");
+        printf("Eingebegend x ist ein negative Zahl.\n");
     }
 
 }
