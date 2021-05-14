@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 #include <complex.h>
-#include <math.h>
 const double PI=3.14159265;
 
 int main()
 {
-    int T_int=1;
-    double r3s, r5s, T;
+    int T_int;
+    double r3s, r5s, T,Ts[]={0.001,0.002,0.005,0.01};
     complex double r3d, r4d, r5d, r4s, Z1, Z2, Z1_R3d, Z2_R5d, Rg;//Widerstand
     complex double U12, Uz1, Uz2, Uz12;//Spannung
     complex double I1, I2, I5, Ig, Ir4d, Ibrueck;//Strom
@@ -63,27 +62,27 @@ int main()
     //printf("\nRg ist :%g +i* %g \u03A9\n",creal(Rg),cimag(Rg));
     
     //Schleife für Rechnen
-    for (T_int=1; T_int<=4; T_int++) {
-  
-        
-        
+    for (T_int=0; T_int<4; T_int++) {
+        //Zeit array aufrufen
+        T=Ts[T_int];
+        /*
         //verschiedene Zeit
         switch (T_int) {
             case 1:
-                T=0.001;// 1 ms                
+                T=0.001;// 1 ms              
                 break;
             case 2:
-                T=0.002;// 2 ms                
+                T=0.002;// 2 ms             
                 break;
             case 3:
-                T=0.005;// 5 ms               
+                T=0.005;// 5 ms            
                 break;
             case 4:
                 T=0.01;// 10 ms
                 break;
 
         }
-
+        */
         U12=10*cos(2.*PI*50*T-90./180.*PI)+I*10*sin(2.*PI*50*T-90./180.*PI);
 
         Ig=U12/Rg;
