@@ -41,28 +41,25 @@ int main(){
 
         case 'd'://gfolge00.c
             zahl_d=1;
-            while (1) {
+            while (zahl_d!=0) {
                 printf("%ld\n",zahl_d);
                 zahl_d=zahl_d*2;
-                sleep(1);
             }
             break;
 
         case 'e'://gfolge10.c
             zahl_e=0.5;
-            while (1) {
+            while (zahl_e!=0) {
                 printf("%g\n",zahl_e);
                 zahl_e*=0.5;
-                sleep(1);
             }
             break;
 
         case 'f'://gfolge10.c
             zahl_f=0.5;
-            while (1) {
+            while (zahl_f!=0) {
                 printf("%g\n",zahl_f);
                 zahl_f*=-0.5;
-                sleep(1);
             }
             break;
 
