@@ -1,0 +1,202 @@
+[33mcommit 182a3484107c1db2ba1b2d176ec60f359ef36a60[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Sat Aug 21 09:13:11 2021 +0200
+
+    ITA
+
+[33mcommit ee6681b65f0b3da75df8038e401a7139e126af48[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Sat Jun 26 11:34:23 2021 +0200
+
+    ITA Hausaufgabe
+
+[33mcommit 1acc62120acb7154fe009961f2f15b7ce61b556c[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Sat Jun 19 12:09:22 2021 +0200
+
+    ITA Hausaufgabe
+
+[33mcommit b1100071a49993fc1c7b77f7941af802036fc136[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Thu Jun 3 17:31:32 2021 +0200
+
+    ITA Hausaufgaben
+
+[33mcommit a4eb694386eaccdaad75406e015fbbb0aa65a7b5[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Sat May 15 12:11:13 2021 +0200
+
+    c16a6 & c16a7
+
+[33mcommit c1b7160c2893ad3a5940038a36423a4c45005a99[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Fri May 14 20:45:52 2021 +0200
+
+    c16a6 & c16a7
+
+[33mcommit 3e115c021b8fc540024ee6ef9777c0e7fb54f567[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Fri May 14 20:44:39 2021 +0200
+
+    brückenschaltung
+
+[33mcommit a92272243723dd866550f74681df0b314e38832a[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Fri May 14 13:05:27 2021 +0200
+
+    brückenschaltung
+
+[33mcommit e48b875f07b350387b02300d8010263d99c6dc88[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Sat May 8 12:41:35 2021 +0200
+
+    +c16.o
+
+[33mcommit 95a6b54e9b3af30222fae157fa57ecd66afe2528[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Sat May 8 09:14:23 2021 +0200
+
+    #stern_dreieck
+
+[33mcommit d5bce5b54fd2430faa80474b1c0531cfca68ca51[m
+Merge: f1a4b0e 9f57a51
+Author: Digua <tengweilong@outlook.com>
+Date:   Sat Apr 24 12:30:52 2021 +0200
+
+    erge branch 'main' of github.com:DiguaTQL/aufgaben into main
+
+[33mcommit f1a4b0e49a175a71dab5f08557474342f0805173[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Sat Apr 24 12:29:40 2021 +0200
+
+    +HA c15a4,5
+
+[33mcommit 389d7656a168f48f15d0bfd17990ee88b022daed[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Sat Apr 24 10:46:55 2021 +0200
+
+    +Es_let stern_dreick (not finish)
+
+[33mcommit 9f57a510b0b0b3a4b263192e43e6d252f64a4835[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Mon Mar 22 15:23:32 2021 +0100
+
+    #c15a2c.c
+
+[33mcommit b7bd23f7a2b06d5364d4f8c862323a19ac646f50[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Sat Mar 20 12:59:49 2021 +0100
+
+    +c15a2c.o
+
+[33mcommit e6e845b42ce7958c925f69094d81e05e4a8d060d[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Fri Mar 19 21:06:19 2021 +0100
+
+    +c14a34
+
+[33mcommit d3391405d7e7977cb2b4190a46724e1f9fde0671[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Sat Mar 13 09:15:13 2021 +0100
+
+    +Projekt 3 ES/Let
+
+[33mcommit e1c44cbe2af64226235c04333a7b9a6c90b80609[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Fri Mar 12 15:04:05 2021 +0100
+
+    Aufgabe ergänzen
+
+[33mcommit 8b224ebf09563eb4ea83d5194ab0c084d99b4f7c[m
+Merge: 336677e fa6c1f2
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 23:57:20 2021 +0100
+
+    Merge branch 'main' of github.com:DiguaTQL/aufgaben into main
+
+[33mcommit 336677e54f1276d3f17fd4ef2cbf0e9fb6439bb7[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 23:56:58 2021 +0100
+
+    test for VS Code
+
+[33mcommit fa6c1f23cce3cd7bf59c6f209272f7194aa9be74[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 23:49:01 2021 +0100
+
+    "test in VS Code"
+
+[33mcommit 599aef41f1bb5cb671b08f666a1200c1247f8d82[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 21:45:34 2021 +0100
+
+    -test1.c
+
+[33mcommit 4b786b7b66f04bd88146de82d38ae083d5e50884[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 21:40:01 2021 +0100
+
+    +test1.c
+
+[33mcommit 1dbb8051a5dcdcef2dbcc3d016a1900a05dc6b8b[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 21:37:36 2021 +0100
+
+    revome file.c
+
+[33mcommit 09b4d1c3e652230ada7a76f980ab1cb2158733d4[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 21:36:25 2021 +0100
+
+    Revert "-remove all"
+    
+    This reverts commit 2597587b4cd6a5c82373eaf73fd5f6df338077ea.
+
+[33mcommit 2597587b4cd6a5c82373eaf73fd5f6df338077ea[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 21:25:33 2021 +0100
+
+    -remove all
+
+[33mcommit 4bdbce929db7d76c2c49d5b33c46cd8f06092842[m
+Merge: a5d5db6 6c059a0
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 21:20:45 2021 +0100
+
+    Merge branch 'main' of github.com:DiguaTQL/aufgaben into main
+
+[33mcommit 6c059a03d17e63835eeaf11c8ec52738e1aa2e3e[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 21:18:37 2021 +0100
+
+    + file.c
+
+[33mcommit a5d5db6e6c311f83d7eeb13b480ee43f6c890139[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 21:15:59 2021 +0100
+
+    - test.c
+
+[33mcommit 98deb9528804ca9fe326fe375982ecaabf9034bb[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 21:12:31 2021 +0100
+
+    # change test.c
+
+[33mcommit baaf5fd67b20f6bd18787f72311f7ff6d77d1d48[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 21:07:50 2021 +0100
+
+    add test.c
+
+[33mcommit 7626b04e19d2400ff3b65fb6c102c203ce76728f[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 20:13:48 2021 +0100
+
+    test 3
+
+[33mcommit 4c2bbc80a559ff9b1dd26d86d57f38faee559339[m
+Author: Digua <tengweilong@outlook.com>
+Date:   Wed Mar 10 20:08:04 2021 +0100
+
+    test
