@@ -1,0 +1,15 @@
+Hausaufgabe C24A1:
+a)Bei Unterprogramm wichtigefuktion() und wenn der aufgerufen wird.
+b)In ganz main() außer Zeile 18;
+c)In ganz main();
+d)Ab Zeile 14 bis Ende main();
+e)99
+
+C24A2:
+a)Zeile 5-9,17-18
+b)Zeile 6-10,17-18
+c)Zeile 10-16
+d)Zeile 11-16
+e)895
+f)4
+g)3
