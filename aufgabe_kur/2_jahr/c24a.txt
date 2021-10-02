@@ -17,5 +17,5 @@ g)3
 C24A3:
 a)Laufzeitumgebung
 b)2-6ms,19-24ms
-c)8-12ms
+c)7-18ms
 d)1-24ms
