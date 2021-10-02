@@ -13,3 +13,9 @@ d)Zeile 11-16
 e)895
 f)4
 g)3
+
+C24A3:
+a)Laufzeitumgebung
+b)2-6ms,19-24ms
+c)8-12ms
+d)1-24ms
