@@ -91,9 +91,52 @@ int main(){
         return 1;
     }
 
+    /*
+    char aufgabe[2];
+    printf("Bitte Aufgabe Nummer <1a-2b> eingeben:");
+    scanf("%s",aufgabe);
+     if (aufgabe[0]=='1') {
 
+        switch (aufgabe[1]) {
+            case 'a':
+                einsa();
+                break;
 
+            case 'b':
+                einsb();
+                break;
+
+            case 'c':
+                einsc();
+                break;
+
+                
+            case 'd':
+                einsd();
+                break;
+
+                
+            case 'e':
+                einse();
+                break;
+
+                
+            case 'f':
+                einsf();
+                break;
+
+                
+            case 'g':
+                einsg();
+                break;
+
+            default:
+                puts("Input Invalid!");
+                return 1;
+        }
+        return 0;
+    }
             
-    
+    */
 
 }
