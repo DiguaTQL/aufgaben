@@ -470,11 +470,15 @@ void l(){   //Aufgabe 12
                     anzahl=anzahl+note[x];
                     summe=summe+((x+1)*note[x]);
                 }
-                mittelwert=summe/anzahl;
+                if (anzahl==0) {
+                    mittelwert=0;
+                }else {
+                    mittelwert=summe/anzahl; 
+                }
                 //note[6]=mittelwert;
                 //note[7]=anzahl;
                 printf("|1\t|2\t|3\t|4\t|5\t|6\t|AMW\t|ANZ\t|\n");
-                printf("----------------------------------------------------------\n");
+                printf("-----------------------------------------------------------------\n");
                 for (y=0; y<6; ++y) {
                     printf("|%d\t",note[y]);
                 }
@@ -504,11 +508,15 @@ void l(){   //Aufgabe 12
                     anzahl=anzahl+note[x];
                     summe=summe+((x+1)*note[x]);
                 }
-                mittelwert=summe/anzahl;
+                if (anzahl==0) {
+                    mittelwert=0;
+                }else {
+                    mittelwert=summe/anzahl; 
+                }
                 //note[6]=mittelwert;
                 //note[7]=anzahl;
                 printf("|1\t|2\t|3\t|4\t|5\t|6\t|AMW\t|ANZ\t|\n");
-                printf("----------------------------------------------------------\n");
+                printf("-----------------------------------------------------------------\n");
                 for (y=0; y<6; ++y) {
                     printf("|%d\t",note[y]);
                 }
