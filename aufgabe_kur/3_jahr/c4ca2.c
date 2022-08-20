@@ -5,14 +5,16 @@
 int main(){
     char webadresse[200]="";
     char webadresse2[201]="";
-    char swget[6]="wget ";
+    char zusatz[30]="-nc -r -I/";
+    char swget[300]="wget ";
     int rc;
     printf("Bitte geben Sie die URL ein:");
     scanf("%200s",webadresse);
     //puts(webadresse);
     while (getchar()!='\n') {}
     //puts(webadresse);
-    rc=system(strcat(swget, webadresse));
+    strcat(swget, webadresse);
+    rc=system(strcat(swget,zusatz));
     //strcpy(webadresse2,strcat(swget, webadresse));
     //puts(webadresse);
     printf("Der Wert von rc ist:%d\n",rc);
