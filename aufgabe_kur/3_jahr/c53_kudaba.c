@@ -1,56 +1,105 @@
 #include <stdio.h>
+#include <string.h>
 
-struct persontyp{
-    char vorname[30];
+#define LZE while(getchar()!='\n') {}
+#define MaxAnzahl 10
+
+struct persontyp
+{
     char nachname[30];
+    char vorname[30];
     unsigned long gd;
 };
 
-struct persontyp scanperson(void){
-    struct persontyp a;
-    puts("Datensatz eingeben");
+struct persontyp scanperson(void)
+{
+    struct persontyp person;
+    
+    printf("Datensatz eingeben:\n");
+
     printf("Nachname:");
-    scanf("%29[^\n]",a.nachname);
-    while (getchar()!='\n') {}
+    scanf("%29[^\n]",person.nachname);
+    while(getchar()!='\n') {}
+
     printf("Vorname:");
-    scanf("%29[^\n]",a.vorname);
+    scanf("%29[^\n]",person.vorname);
     while (getchar()!='\n') {}
+
     printf("Geburtsdatum:");
-    scanf("%lu",&a.gd);
+    scanf("%lu",&person.gd);
+    while(getchar()!='\n') {}
+
+    return person;
 }   
 
-void printpersion( int x, struct persontyp b){
-    printf("%d %s %s %lu\n",x,b.nachname,b.nachname,b.gd);
+void printpersion( int x, struct persontyp b)
+{
+    printf("%d %s %s %lu\n",x+1,b.nachname,b.vorname,b.gd);
 }
 
 int main(void){
-    int m;
+    int m=0,c=0,deletnum=0;
+    struct persontyp kudaba[MaxAnzahl]={{.nachname=""}/*,{.nachname=""},{.nachname=""},{.nachname=""},{.nachname=""},{.nachname=""},{.nachname=""},{.nachname=""},{.nachname=""},{.nachname=""}*/};
 
-    puts("Kundendaten");
-    puts("----------------------------");        
-    puts("<0> Ende");        
-    puts("<1> Alle Daten ausgeben");        
-    puts("<2> Neuen Datensatz eingeben");        
-    puts("----------------------------");
-    printf("Ihre Auswahl:");
-    scanf("%d",&m);
+    do {
+        
+        puts("Kundendaten");
+        puts("----------------------------");        
+        puts("<0> Ende");        
+        puts("<1> Alle Daten ausgeben");        
+        puts("<2> Neuen Datensatz eingeben");    
+        puts("<3> Datensatz löschen");        
+        puts("----------------------------");
+        printf("Ihre Auswahl:");
+        scanf("%d",&m);        
+        while(getchar()!='\n') {}
 
-    switch(m) {
-        case 0:
-            puts("Ende.");
-            break;
+        switch(m) {
+            case 0:
+                puts("Ende.");
+                break;
 
-        case 1:
-            printf("a ist eins\n");
-            break;
+            case 1:
+                puts("Alle Kundendaten ausgeben:");
+                for (int i=0; i<c; ++i) {
+                    printpersion(i, kudaba[i]);
+                }
+                puts("----------------------------");
+                break;
 
-        case 2:
-            printf("a ist zwei\n");
-            break;
+            case 2:
+                if (c<MaxAnzahl) {
+                printf("Liste Nr. %i ",c+1);
+                kudaba[c]=scanperson();
+                ++c;
+                puts("----------------------------");
+                }
+                else {
+                puts("Error: Datenbank voll!");
+                puts("----------------------------");
+                }
+                break;
 
-        case 3: printf("a ist drei\n"); break;
+            case 3:
+                for (int i=0; i<c; ++i) {
+                    printpersion(i, kudaba[i]);
+                }
+                printf("Welche Datensatz sollt gelöscht wird: ");
+                scanf("%d",&deletnum);
+                LZE;
+                for (int i=deletnum-1; i<c; ++i) {
+                    if (i < MaxAnzahl) {
+                    kudaba[i] = kudaba[i+1];
+                    }
+                    c--;
+                }
+                puts("----------------------------");
+                
+                
+                break;
 
-        default: printf("Input Invalid!\n"); break;
-    }        
+            default: printf("Input Invalid!\n"); break;
+        }        
 
+    }while (m!=0);
 }
