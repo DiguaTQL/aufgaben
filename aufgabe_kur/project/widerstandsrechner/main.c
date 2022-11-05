@@ -3,7 +3,7 @@
 
 int main(void){
     /*
-    1.Abfragen Anzahl der Ringe             von anzahlring.c Rückgabe int.
+    1.Abfragen Anzahl der Ringe             von anzahlring.c Rückgabe int. -done.
     2.Eingabe/Fabecode Beispeile fr-fr-fr-fr-fr so...       von 
     3.if Eingabe nicht korrekt, dann analysieren welche Feherl und Fehler Tipps ausgeben
     3.5 Eingabe wieder abfragen
@@ -21,10 +21,7 @@ int main(void){
     // 1
     int iRingAnzahl;
     
-    printf("Bitte geben Sie Anzahl der Ring ein:");
-    scanf("&i",&iRingAnzahl);
-
-    anzahlring();
+    iRingAnzahl=AnzahlRing();
 
 
 
