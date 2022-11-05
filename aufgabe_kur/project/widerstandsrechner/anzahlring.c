@@ -7,8 +7,8 @@ int AnzahlRing(){
         scanf("%i",&Anzahl);
         while(getchar()!='\n') {}
 
-        if (Anzahl<4 && Anzahl>6){
-            printf("Input invalid, Anzahr der Ringe kann nur 4 oder 5 oder 6 sein.");
+        if (Anzahl<4 || Anzahl>6){
+            printf("Input invalid, Anzahr der Ringe kann nur 4 oder 5 oder 6 sein.\n\n");
             repeat=1;
         }
 
