@@ -1,19 +1,19 @@
-git:
-	git add .
-	git commit -m "$m"
-	git push -u origin main 
-
 HEADERS = program.h headers.h
-OBJECTS = program.o
+OBJECTS = main.c
 
-default: program
+default: main.o
 
 %.o: %.c $(HEADERS)
 	gcc -c $< -o $@
 
-program: $(OBJECTS)
+main.o: $(OBJECTS)
 	gcc $(OBJECTS) -o $@
 
 clean:
-	-rm -f $(OBJECTS)
-	-rm -f program
+#	-rm -f $(OBJECTS)
+	-rm -f main.o
+
+git:
+	git add .
+	git commit -m "ITA"
+	git push -u origin main 
