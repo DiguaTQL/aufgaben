@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "anzahlring.c"
 
 int main(void){
     /*
@@ -14,6 +15,7 @@ int main(void){
         char Toleranz[10];
     }
 
+    Aufruf durch resistor.Ring_1_nr, resistor.Ring_2_nr...
 
     */
     // 1
@@ -22,6 +24,7 @@ int main(void){
     printf("Bitte geben Sie Anzahl der Ring ein:");
     scanf("&i",&iRingAnzahl);
 
+    anzahlring();
 
 
 
