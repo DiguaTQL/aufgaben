@@ -13,6 +13,6 @@ int languange(){
     }
 
     }while (languageNr!=0 && languageNr!=1 );
-
+    puts("---------------------------------------");
     return languageNr;
 }
