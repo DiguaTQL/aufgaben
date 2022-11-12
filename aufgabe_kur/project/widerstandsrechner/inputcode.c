@@ -16,8 +16,14 @@ char *inputcode(int AnzahlRing,int languageNr){
     color[1]="Verfügbare Farbe:\nschwarz - sw | braun - br | rot - rt | orange - or | gelb - yl | grün - gn\nblau - bl | violett - vi | grau - gr | weiß - ws | gold - gd | silber - sr";
 
     printf("\n%s\n",Example[AnzahlRing-4][languageNr]);
-    printf("%s\n",color[languageNr]);
-
+    printf("%s\n",color[languageNr]);    
+    puts("---------------------------------------");
+    char *frage[2];
+    frage[0]="Please enter the colour code:";
+    frage[1]="Bitte geben Sie die Farbe Code ein:";
+    printf("%s\n",frage[languageNr]);    
+    scanf("%39[^\n]",farbecode);
+    while (getchar()!='\n') {}
 
     return farbecode;
 }
