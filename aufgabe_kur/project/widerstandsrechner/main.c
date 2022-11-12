@@ -1,4 +1,3 @@
-#include <bits/types/struct_FILE.h>
 #include <stdio.h>
 #include "language.c"
 #include "anzahlring.c"
@@ -37,6 +36,5 @@ int main(void){
     int iRingAnzahl=AnzahlRing(languageNr);
     char *farbecode=inputcode(iRingAnzahl,languageNr);
     int check=codecheck(farbecode,iRingAnzahl,languageNr);
-    puts(farbecode);
 
 }
