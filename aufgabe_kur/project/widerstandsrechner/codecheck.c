@@ -3,7 +3,7 @@
 
 int codecheck(char *farbecode, int AnzahlRing, int languageNr){
     puts(farbecode);
-    char *w1;
+    char w1[2]="";
     int lauf=0;
     while (farbecode[lauf]!='-') {
         w1[lauf]=farbecode[lauf];

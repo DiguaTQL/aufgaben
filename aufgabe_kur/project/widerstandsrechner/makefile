@@ -1,13 +1,17 @@
 HEADERS = program.h headers.h
 OBJECTS = main.c
+CC = gcc
 
 default: main.o
 
-%.o: %.c $(HEADERS)
-	gcc -c $< -o $@
+#%.o: %.c $(HEADERS)
+#	gcc -c $< -o $@
 
-main.o: $(OBJECTS)
-	gcc $(OBJECTS) -o $@
+%.o : %.c
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
+
+#main.o: $(OBJECTS)
+#	gcc $(OBJECTS) -o $@
 
 clean:
 #	-rm -f $(OBJECTS)
