@@ -1,13 +1,16 @@
 #include <stdio.h>
+#include "resistor.h"
 #include "language.c"
 #include "anzahlring.c"
 #include "inputcode.c"
 #include "codecheck.c"
 
+/*
 struct resistor{
     int Ring_1_nr, Ring_2_nr, Ring_3_nr, Multifakt, Tempko;
     char Toleranz[10];
 };
+*/
 
 int main(void){
     /*

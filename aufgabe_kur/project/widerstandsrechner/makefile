@@ -1,14 +1,14 @@
-HEADERS = program.h headers.h
+HEADERS = resistor.h
 OBJECTS = main.c
 CC = gcc
 
 default: main.o
 
-#%.o: %.c $(HEADERS)
-#	gcc -c $< -o $@
+%.o: %.c $(HEADERS)
+	gcc -c $< -o $@
 
-%.o : %.c
-	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
+#%.o : %.c
+#	$(CC) -c $(CFLAGS) $< -o $@
 
 #main.o: $(OBJECTS)
 #	gcc $(OBJECTS) -o $@
