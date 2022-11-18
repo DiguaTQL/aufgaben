@@ -1,17 +1,15 @@
 HEADERS = resistor.h
 OBJECTS = main.c
-CC = gcc
 
-default: main.o
+default:
+	gcc -Wall main.c -o main.o
+	main.o
 
-%.o: %.c $(HEADERS)
-	gcc -c $< -o $@
+#%.o: %.c $(HEADERS)
+#	gcc $< -o $@
 
-#%.o : %.c
-#	$(CC) -c $(CFLAGS) $< -o $@
-
-#main.o: $(OBJECTS)
-#	gcc $(OBJECTS) -o $@
+main.o: $(OBJECTS)
+	gcc -Wall $(OBJECTS) -o $@
 
 clean:
 #	-rm -f $(OBJECTS)
@@ -20,4 +18,4 @@ clean:
 git:
 	git add .
 	git commit -m "ITA"
-	git push -u origin main 
+	git push -u origin main 0

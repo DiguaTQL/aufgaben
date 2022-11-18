@@ -34,10 +34,14 @@ int main(void){
 
     */
 
-   
+    int check=0;
     int languageNr=languange();
     int iRingAnzahl=AnzahlRing(languageNr);
+    do {
+    
     char *farbecode=inputcode(iRingAnzahl,languageNr);
-    int check=codecheck(farbecode,iRingAnzahl,languageNr);
-
+    check=codecheck(farbecode,iRingAnzahl,languageNr);
+    }while (check!=0);
+    
+    return 0;
 }
