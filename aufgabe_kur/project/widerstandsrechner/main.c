@@ -42,6 +42,7 @@ int main(void){
     char *farbecode=inputcode(iRingAnzahl,languageNr);
     check=codecheck(farbecode,iRingAnzahl,languageNr);
     }while (check!=0);
-    
+    struct resistor x;
+    x.Ring_1_nr=1;
     return 0;
 }
