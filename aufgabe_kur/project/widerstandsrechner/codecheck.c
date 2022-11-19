@@ -4,7 +4,7 @@
 #include "split.c"
 
 int codecheck(char *farbecode, int AnzahlRing, int languageNr){
-    puts(farbecode);
+    printf("In %s, zeile %d, farbecode: %s\nstrlen of farbecode: %ld, sizeof farbecode: %ld\n",__FILE__,__LINE__,farbecode,strlen(farbecode),sizeof(farbecode));
 
     int minus=0;
     char *minusnr[2];
@@ -24,18 +24,11 @@ int codecheck(char *farbecode, int AnzahlRing, int languageNr){
     
     char *w1;
     int i=0;
-    //for (i=0;  i<minus; ++i) {
+    for (i=0;  i<=minus; ++i) {
         w1=split(farbecode, '-', i);
         puts(w1);
-    //}
-    
-    /*char w1[2]="";
-    int lauf=0;
-    while (farbecode[lauf]!='-') {
-        w1[lauf]=farbecode[lauf];
-        ++lauf;
     }
-    printf("%s",w1);*/
+    
     
     return 0;
 }
