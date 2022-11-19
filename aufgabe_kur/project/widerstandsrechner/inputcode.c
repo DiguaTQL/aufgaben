@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 char *inputcode(int AnzahlRing,int languageNr){
-    static char farbecode[]="";
+    static char farbecode[100]="";// static char (string) immer Länge eingeben, nicht dynamisch lassen !!!!!!
     
     char *Example[3][2];
     Example[0][0]="Example: yellow-violet-red-gold\nor \t yl-vio-rd-gd";
