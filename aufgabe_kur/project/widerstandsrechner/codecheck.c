@@ -14,7 +14,7 @@ int codecheck(char *farbecode, int AnzahlRing, int languageNr){
     errorminus[0]="The number of entered color incorrect, please try again.";
     errorminus[1]="Die Anzahl von eingegebenen Farbe fehlerhaft, bitte erneut eingeben.";
     minus=findeminus(farbecode);
-    printf("minus=%d\n",minus);
+    //printf("minus=%d\n",minus);
     if (minus != (AnzahlRing-1)) {
         puts("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         printf("%s%d\n%s\n",minusnr[languageNr],minus+1,errorminus[languageNr]);
@@ -22,9 +22,11 @@ int codecheck(char *farbecode, int AnzahlRing, int languageNr){
         return 1;
     }
 
-    char *w1;
-    w1=split(farbecode, '-', minus);
-    puts(w1);
+    for (int i=0;  i<minus; ++i) {
+        char *w1;
+        w1=split(farbecode, '-', minus);
+        puts(w1);
+    }
     /*char w1[2]="";
     int lauf=0;
     while (farbecode[lauf]!='-') {

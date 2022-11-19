@@ -10,7 +10,7 @@ char *split(char *input, char marker, int MarkerNr){
         ++lauf;
     }
     result=w1;
-    printf(" in %s, zeile %d, Input:%s, resule:%s\n",__FILE__,__LINE__,input,result);
+    printf("In %s, zeile %d, Input:%s, resule:%s\n",__FILE__,__LINE__,input,result);
 
     return result;
 }
