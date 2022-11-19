@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 char *inputcode(int AnzahlRing,int languageNr){
-    static char farbecode[40];
+    static char farbecode[]="";
     
     char *Example[3][2];
     Example[0][0]="Example: yellow-violet-red-gold\nor \t yl-vio-rd-gd";
@@ -22,7 +22,7 @@ char *inputcode(int AnzahlRing,int languageNr){
     frage[0]="Please enter the colour code:";
     frage[1]="Bitte geben Sie die Farbe Code ein:";
     printf("%s\n",frage[languageNr]);    
-    scanf("%39[^\n]",farbecode);
+    scanf("%99[^\n]",farbecode);
     while (getchar()!='\n') {}
 
     return farbecode;

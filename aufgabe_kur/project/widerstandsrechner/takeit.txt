@@ -1,0 +1,9 @@
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/anzahlring.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/codecheck.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/findminus.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/inputcode.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/language.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/main.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/resistor.h
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/split.c
+#ausführen mit "sh takeit.txt"

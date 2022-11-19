@@ -21,12 +21,14 @@ int codecheck(char *farbecode, int AnzahlRing, int languageNr){
         puts("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         return 1;
     }
-
-    for (int i=0;  i<minus; ++i) {
-        char *w1;
-        w1=split(farbecode, '-', minus);
+    
+    char *w1;
+    int i=0;
+    //for (i=0;  i<minus; ++i) {
+        w1=split(farbecode, '-', i);
         puts(w1);
-    }
+    //}
+    
     /*char w1[2]="";
     int lauf=0;
     while (farbecode[lauf]!='-') {
