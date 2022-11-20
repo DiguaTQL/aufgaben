@@ -5,7 +5,7 @@ char *split(char *input, char marker, int MarkerNr){
 
     char *result="";
     //Test 1
-    static char w1[6][99]={{""}};
+    static char w1[99][99]={{""}};
     //static char w1[]=""; //hier macht ein Fehler das w1 dierekt Inhalt von Input bekommt !!!!!!!!!!!!!!
     //-printf("In %s, Zeile %d, w1:%s, strlen of w1: %ld\n",__FILE__,__LINE__,w1,strlen(w1));
     int lauf=0,Nr=0,idx=0;
