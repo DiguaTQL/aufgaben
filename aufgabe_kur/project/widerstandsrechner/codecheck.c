@@ -48,6 +48,8 @@ int codecheck(char *farbecode, int AnzahlRing, int languageNr){
         //puts(w1[i]);
     }
 
+    char errorinputring[2][100];
+
     int check=0;
     for (i=0; i<AnzahlRing; ++i) {
         int ring_minus=findeminus(ring[i][languageNr]);
@@ -63,7 +65,11 @@ int codecheck(char *farbecode, int AnzahlRing, int languageNr){
                     break;
                 }
                 else if (x == ring_minus) {
-                    printf("Eingabe Ring %d ist ungültig.\n",i+1);
+                    if (check == 0) 
+                        puts("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");   
+                    sprintf(errorinputring[0],"The entered color of ring %d is invalid, input : %s.",i+1,w1[i]);
+                    sprintf(errorinputring[1],"Die eingegebene Farbe von Ring %d ist ungültig,, Eingabe : %s.",i+1,w1[i]);
+                    puts(errorinputring[languageNr]);
                     check=1;
                     break;
                 }
@@ -71,7 +77,7 @@ int codecheck(char *farbecode, int AnzahlRing, int languageNr){
         }
     }
     if (check==1) {
-        puts("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        puts("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         return 1;
     }
     

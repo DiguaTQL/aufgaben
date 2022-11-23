@@ -21,10 +21,14 @@ char *split(char *input, char marker, int MarkerNr){
         }
     }
     ************************************************/
+    if (strcmp(w1[0],"")!=0) {          
+        memset(w1[0], 0, sizeof(w1[0]));    // here will clean the allocated memory
+    }
 
     while (input[lauf]!='\0' && lauf<=strlen(input)) {
         if (input[lauf]==marker) {
             ++Nr;
+            memset(w1[Nr], 0, sizeof(w1[Nr]));  // here will clean the allocated memory
             //printf("In %s, Zeile %d, Nr:%d, MarkerNr:%d\n",__FILE__,__LINE__,Nr,MarkerNr);
         }
         
