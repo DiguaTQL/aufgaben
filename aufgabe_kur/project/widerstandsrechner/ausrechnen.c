@@ -18,17 +18,17 @@ void ausrechnen(struct resistor widerstand, int Ringanzahl, int languageNr)
     }
     if (languageNr==0) {
         if (Ringanzahl == 4)
-            printf(" The risister has %g Ohm, +/-%s%% tolerance\n", Endwert1, widerstand.Toleranz);
+            printf("\nThe resistor has %g Ohms, +/- %s tolerance\n", Endwert1, widerstand.Toleranz);
         else if (Ringanzahl == 5)
-            printf(" The risister has %g Ohm, +/-%s%% tolerance\n", Endwert2, widerstand.Toleranz);
+            printf("\nThe resistor has %g Ohms, +/- %s tolerance\n", Endwert2, widerstand.Toleranz);
         else if (Ringanzahl == 6)
-            printf(" The risister has %g Ohm, +/-%s%% tolerance, PPM %ippm\n", Endwert2, widerstand.Toleranz, widerstand.Tempko);
+            printf("\nThe resistor has %g Ohms, +/- %s tolerance, PPM %ippm\n", Endwert2, widerstand.Toleranz, widerstand.Tempko);
     }else if (languageNr==1) {
         if (Ringanzahl == 4)
-            printf(" Der Widerstandswert beträgt %g Ohm, +/-%s Toleranz\n", Endwert1, widerstand.Toleranz);
+            printf("\nDer Widerstandswert beträgt %g Ohms, +/- %s Toleranz\n", Endwert1, widerstand.Toleranz);
         else if (Ringanzahl == 5)
-            printf(" Der Widerstandswert beträgt %g Ohm, +/-%s Toleranz\n", Endwert2, widerstand.Toleranz);
+            printf("\nDer Widerstandswert beträgt %g Ohms, +/- %s Toleranz\n", Endwert2, widerstand.Toleranz);
         else if (Ringanzahl == 6)
-            printf(" Der Widerstandswert beträgt %g Ohm, +/-%s Toleranz, Temperaturkoeffizient %ippm\n", Endwert2, widerstand.Toleranz, widerstand.Tempko);
+            printf("\nDer Widerstandswert beträgt %g Ohms, +/- %s Toleranz, Temperaturkoeffizient %ippm\n", Endwert2, widerstand.Toleranz, widerstand.Tempko);
     }
 }

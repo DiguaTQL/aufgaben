@@ -5,7 +5,7 @@
 #include "findminus.c"
 #include "split.c"
 
-struct resistor auswerten( char *farbecode, int AnzahlRing, int languageNr){
+struct resistor auswerten(char *farbecode, int AnzahlRing, int languageNr){
     struct resistor widerstand;
     /*char *ring[6][2]={{""}};
     ring[0][0]="black-bk-brown-bn-red-rd-orange-og-yellow-ye-green-gn-blue-bu-violet-vt-grey-gy-white-wh";//Ring 1 bei 4,5,6
@@ -54,19 +54,21 @@ struct resistor auswerten( char *farbecode, int AnzahlRing, int languageNr){
 
 
     char w1[6][10]={{""}};
-    char w2[10]="";
+    //char w2[10]="";
     int idx = 0;
     for (idx =0; idx<AnzahlRing; ++idx) {
         strcpy(w1[idx], split(farbecode, '-', idx));
-        for (int farbe_idx; farbe_idx<12; ++farbecode) {
-            for (int format_idx; format_idx<4; ++format_idx) {
-                
+        
+        for (int farbe_idx=0; farbe_idx<12; ++farbe_idx) {
+            for (int format_idx=0; format_idx<4; ++format_idx) {
                 if(strcmp(w1[idx], farbe[farbe_idx][format_idx])==0){
                     switch (idx) {
 
-                        case 0:widerstand.Ring_1_nr=farbe_idx+1;break;  //1st Ring
+                        case 0:                                         //1st Ring
+                            widerstand.Ring_1_nr=farbe_idx;break;  
 
-                        case 1:widerstand.Ring_2_nr=farbe_idx+1;break;  //2te Ring
+                        case 1:                                         //2te Ring
+                            widerstand.Ring_2_nr=farbe_idx;break;  
 
                         case 2:                                         //3te Ring
                             if (AnzahlRing==4) {                //4er Ring
@@ -80,20 +82,20 @@ struct resistor auswerten( char *farbecode, int AnzahlRing, int languageNr){
                                         
                                 }
                             }else {                             //5er, 6er Ring
-                                widerstand.Ring_3_nr=farbe_idx+1;
+                                widerstand.Ring_3_nr=farbe_idx;
                             }
                             break;
 
                         case 3:                                         //4te Ring
                             if (AnzahlRing==4) {                //4er Ring
                                 switch (farbe_idx) {
-                                    case 1:strcpy(widerstand.Toleranz,"1%%");break;
-                                    case 2:strcpy(widerstand.Toleranz,"2%%");break;
-                                    case 5:strcpy(widerstand.Toleranz,"0.5%%");break;
-                                    case 6:strcpy(widerstand.Toleranz,"0.25%%");break;
-                                    case 7:strcpy(widerstand.Toleranz,"0.1%%");break;
-                                    case 10:strcpy(widerstand.Toleranz,"5%%");break;
-                                    case 11:strcpy(widerstand.Toleranz,"10%%");break;
+                                    case 1:strcpy(widerstand.Toleranz,"1%");break;
+                                    case 2:strcpy(widerstand.Toleranz,"2%");break;
+                                    case 5:strcpy(widerstand.Toleranz,"0.5%");break;
+                                    case 6:strcpy(widerstand.Toleranz,"0.25%");break;
+                                    case 7:strcpy(widerstand.Toleranz,"0.1%");break;
+                                    case 10:strcpy(widerstand.Toleranz,"5%");break;
+                                    case 11:strcpy(widerstand.Toleranz,"10%");break;
                                 }
                             }
                             else {
@@ -111,13 +113,13 @@ struct resistor auswerten( char *farbecode, int AnzahlRing, int languageNr){
                         
                         case 4:                                         //5te Ring
                             switch (farbe_idx) {
-                                    case 1:strcpy(widerstand.Toleranz,"1%%");break;
-                                    case 2:strcpy(widerstand.Toleranz,"2%%");break;
-                                    case 5:strcpy(widerstand.Toleranz,"0.5%%");break;
-                                    case 6:strcpy(widerstand.Toleranz,"0.25%%");break;
-                                    case 7:strcpy(widerstand.Toleranz,"0.1%%");break;
-                                    case 10:strcpy(widerstand.Toleranz,"5%%");break;
-                                    case 11:strcpy(widerstand.Toleranz,"10%%");break;
+                                    case 1:strcpy(widerstand.Toleranz,"1%");break;
+                                    case 2:strcpy(widerstand.Toleranz,"2%");break;
+                                    case 5:strcpy(widerstand.Toleranz,"0.5%");break;
+                                    case 6:strcpy(widerstand.Toleranz,"0.25%");break;
+                                    case 7:strcpy(widerstand.Toleranz,"0.1%");break;
+                                    case 10:strcpy(widerstand.Toleranz,"5%");break;
+                                    case 11:strcpy(widerstand.Toleranz,"10%");break;
                                 }
                             break;
 
@@ -137,6 +139,7 @@ struct resistor auswerten( char *farbecode, int AnzahlRing, int languageNr){
 
                     }
                 }
+                //printf("In %s, zeile %d, idx: %d, farbe_idx: %d, format_idx: %d, w1[idx]: %s, farbe[farbe_idx][format_idx]: %s\n",__FILE__,__LINE__,idx,farbe_idx,format_idx,w1[idx],farbe[farbe_idx][format_idx]);
             }
         }
         

@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#ifndef _findeminus_
+#define _findeminus_
 int findeminus(char *input){
     int x=0,i;
     for (i=0; i< strlen(input); ++i) {
@@ -10,3 +12,4 @@ int findeminus(char *input){
     //printf("Strlen=%ld, i=%d, x=%d\n",strlen(input),i,x);
     return x;
 }
+#endif

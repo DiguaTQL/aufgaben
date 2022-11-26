@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#ifndef _split_
+#define _split_
 
 char *split(char *input, char marker, int MarkerNr){
 
@@ -83,3 +85,5 @@ char *split(char *input, char marker, int MarkerNr){
     **********************************************************************/
     return result;
 }
+
+#endif

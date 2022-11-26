@@ -4,6 +4,8 @@
 #include "anzahlring.c"
 #include "inputcode.c"
 #include "codecheck.c"
+#include "auswerten.c"
+#include "ausrechnen.c"
 
 /*
 struct resistor{
@@ -33,14 +35,17 @@ int main(void){
     SparcheCode 0=Englisch, 1=Deutsch
 
     */
-
+    struct resistor widerstand;
+    char *farbecode;
     int check=0;
     int languageNr=language();
     int iRingAnzahl=AnzahlRing(languageNr);
     do {
     
-    char *farbecode=inputcode(iRingAnzahl,languageNr);
+    farbecode=inputcode(iRingAnzahl,languageNr);
     check=codecheck(farbecode,iRingAnzahl,languageNr);
     }while (check!=0);
+    widerstand=auswerten(farbecode, iRingAnzahl, languageNr);
+    ausrechnen(widerstand, iRingAnzahl, languageNr);
     return 0;
 }

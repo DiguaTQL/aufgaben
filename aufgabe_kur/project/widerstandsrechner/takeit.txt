@@ -1,4 +1,6 @@
 wget -N https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/anzahlring.c
+wget -N https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/ausrechnen.c
+wget -N https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/auswerten.c
 wget -N https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/codecheck.c
 wget -N https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/findminus.c
 wget -N https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/widerstandsrechner/inputcode.c

@@ -2,7 +2,7 @@ HEADERS = resistor.h
 OBJECTS = main.c
 
 default:
-	gcc -Wall main.c -o main.o
+	gcc -Wall main.c -o main.o -lm
 	main.o
 
 #%.o: %.c $(HEADERS)
