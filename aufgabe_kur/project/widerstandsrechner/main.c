@@ -35,7 +35,7 @@ int main(void){
     */
 
     int check=0;
-    int languageNr=languange();
+    int languageNr=language();
     int iRingAnzahl=AnzahlRing(languageNr);
     do {
     
