@@ -9,7 +9,6 @@ char *split(char *input, char marker, int MarkerNr){
     //Test 1
     static char w1[99][99]={{""}};
     //static char w1[]=""; //hier macht ein Fehler das w1 dierekt Inhalt von Input bekommt !!!!!!!!!!!!!!
-    //-printf("In %s, Zeile %d, w1:%s, strlen of w1: %ld\n",__FILE__,__LINE__,w1,strlen(w1));
     int lauf=0,Nr=0,idx=0;
     //printf("In %s, Zeile %d, Input:%s, strlen of Input: %ld\n",__FILE__,__LINE__,input,strlen(input));
     
@@ -35,7 +34,6 @@ char *split(char *input, char marker, int MarkerNr){
         }
         
         if ( input[lauf]!=marker && Nr==MarkerNr) {
-            //printf("In %s, Zeile %d, Input:%s, lauf:%d, w1[%d]:%s, w1[%d][%d]:%c\n",__FILE__,__LINE__,input,lauf,Nr,w1[Nr],Nr,idx,w1[Nr][idx]);
             w1[Nr][idx]=input[lauf];
             //printf("In %s, Zeile %d, Input:%s, lauf:%d, w1[%d]:%s, w1[%d][%d]:%c\n",__FILE__,__LINE__,input,lauf,Nr,w1[Nr],Nr,idx,w1[Nr][idx]);
             ++idx;
