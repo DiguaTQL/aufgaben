@@ -4,15 +4,9 @@
 
 void ausrechnen(struct resistor widerstand, int Ringanzahl, int languageNr)
 {
-   //struct resistor widerstand;
-   //int Ringanzahl;
-   int Endwert1;
-   int Endwert2;
-   
-   //widerstand.Ring_1_nr=2;
-   //widerstand.Ring_2_nr=1;
-   //widerstand.Ring_3_nr=3;
-   //widerstand.Multifakt=100;
+
+   double Endwert1;
+   double Endwert2;
     
     if (Ringanzahl == 4)
     {
@@ -24,17 +18,17 @@ void ausrechnen(struct resistor widerstand, int Ringanzahl, int languageNr)
     }
     if (languageNr==0) {
         if (Ringanzahl == 4)
-            printf(" The risister has %i Ohm, +/-%s%% tolerance\n", Endwert1, widerstand.Toleranz);
+            printf(" The risister has %g Ohm, +/-%s%% tolerance\n", Endwert1, widerstand.Toleranz);
         else if (Ringanzahl == 5)
-            printf(" The risister has %i Ohm, +/-%s%% tolerance\n", Endwert2, widerstand.Toleranz);
+            printf(" The risister has %g Ohm, +/-%s%% tolerance\n", Endwert2, widerstand.Toleranz);
         else if (Ringanzahl == 6)
-            printf(" The risister has %i Ohm, +/-%s%% tolerance,PPM %ippm\n", Endwert2, widerstand.Toleranz, widerstand.Tempko);
+            printf(" The risister has %g Ohm, +/-%s%% tolerance, PPM %ippm\n", Endwert2, widerstand.Toleranz, widerstand.Tempko);
     }else if (languageNr==1) {
         if (Ringanzahl == 4)
-            printf(" Der Widerstandswert beträgt %i Ohm, +/-%s%% Toleranz\n", Endwert1, widerstand.Toleranz);
+            printf(" Der Widerstandswert beträgt %g Ohm, +/-%s Toleranz\n", Endwert1, widerstand.Toleranz);
         else if (Ringanzahl == 5)
-            printf(" Der Widerstandswert beträgt %i Ohm, +/-%s%% Toleranz\n", Endwert2, widerstand.Toleranz);
+            printf(" Der Widerstandswert beträgt %g Ohm, +/-%s Toleranz\n", Endwert2, widerstand.Toleranz);
         else if (Ringanzahl == 6)
-            printf(" Der Widerstandswert beträgt %i Ohm, +/-%s%% Toleranz, Temperaturkoeffizient %ippm\n", Endwert2, widerstand.Toleranz, widerstand.Tempko);
+            printf(" Der Widerstandswert beträgt %g Ohm, +/-%s Toleranz, Temperaturkoeffizient %ippm\n", Endwert2, widerstand.Toleranz, widerstand.Tempko);
     }
 }

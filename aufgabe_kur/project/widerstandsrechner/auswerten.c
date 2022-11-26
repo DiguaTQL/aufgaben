@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 #include "resistor.h"
 #include "findminus.c"
 #include "split.c"
 
 struct resistor auswerten( char *farbecode, int AnzahlRing, int languageNr){
-    struct resistor x;
-    char *ring[6][2]={{""}};
+    struct resistor widerstand;
+    /*char *ring[6][2]={{""}};
     ring[0][0]="black-bk-brown-bn-red-rd-orange-og-yellow-ye-green-gn-blue-bu-violet-vt-grey-gy-white-wh";//Ring 1 bei 4,5,6
     ring[0][1]="schwarz-sw-braun-br-rot-rt-orange-or-gelb-gb-grün-gn-blau-bl-violett-vi-grau-gr-weiß-ws";
     ring[1][0]="black-bk-brown-bn-red-rd-orange-og-yellow-ye-green-gn-blue-bu-violet-vt-grey-gy-white-wh";//Ring 2 bei 4,5,6
@@ -26,18 +27,30 @@ struct resistor auswerten( char *farbecode, int AnzahlRing, int languageNr){
         ring[5][0]="brown-bn-red-rd-orange-og-yellow-ye-blue-bu-violet-vt";//Ring 6 PPM bei 6 
         ring[5][1]="braun-br-rot-rt-orange-or-gelb-gb-blau-bl-violett-vi";
     }
-    char *farbe[2];
+    char *farbe_t[2];
     char *Multiplikator[2];
     char *Toleranz[2];
     char *PPM[2];
-    farbe[0]="black-bk-brown-bn-red-rd-orange-og-yellow-ye-green-gn-blue-bu-violet-vt-grey-gy-white-wh";    
-    farbe[1]="schwarz-sw-braun-br-rot-rt-orange-or-gelb-gb-grün-gn-blau-bl-violett-vi-grau-gr-weiß-ws";    
+    farbe_t[0]="black-bk-brown-bn-red-rd-orange-og-yellow-ye-green-gn-blue-bu-violet-vt-grey-gy-white-wh";    
+    farbe_t[1]="schwarz-sw-braun-br-rot-rt-orange-or-gelb-gb-grün-gn-blau-bl-violett-vi-grau-gr-weiß-ws";    
     Multiplikator[0]="black-bk-brown-bn-red-rd-orange-og-yellow-ye-green-gn-blue-bu-violet-vt-grey-gy-white-wh-gold-gd-sliver-sr";
     Multiplikator[1]="schwarz-sw-braun-br-rot-rt-orange-or-gelb-gb-grün-gn-blau-bl-violett-vi-grau-gr-weiß-ws-gold-gd-silber-sr";
     Toleranz[0]="brown-bn-red-rd-green-gn-blue-bu-violet-vt-grey-gy-gold-gd-sliver-sr";
     Toleranz[1]="braun-br-rot-rt-grün-gn-blau-bl-violett-vi-grau-gr-gold-gd-silber-sr";
     PPM[0]="brown-bn-red-rd-orange-og-yellow-ye-blue-bu-violet-vt";
-    PPM[1]="braun-br-rot-rt-orange-or-gelb-gb-blau-bl-violett-vi";
+    PPM[1]="braun-br-rot-rt-orange-or-gelb-gb-blau-bl-violett-vi";*/
+    char *farbe[12][4]={{"black" ,"bk","schwarz","sw"},
+                        {"brown" ,"bn","braun"  ,"br"},
+                        {"red"   ,"rd","rot"    ,"rt"},
+                        {"orange","og","orange" ,"or"},
+                        {"yellow","ye","gelb"   ,"gb"},
+                        {"green" ,"gn","grün"   ,"gn"},
+                        {"blue"  ,"bu","blau"   ,"bl"},
+                        {"violet","vt","violett","vi"},
+                        {"grey"  ,"gy","grau"   ,"gr"},
+                        {"white" ,"wh","weiß"   ,"ws"},
+                        {"gold"  ,"gd","gold"   ,"gd"},
+                        {"sliver","sr","silber" ,"sr"}};
 
 
     char w1[6][10]={{""}};
@@ -45,10 +58,91 @@ struct resistor auswerten( char *farbecode, int AnzahlRing, int languageNr){
     int idx = 0;
     for (idx =0; idx<AnzahlRing; ++idx) {
         strcpy(w1[idx], split(farbecode, '-', idx));
+        for (int farbe_idx; farbe_idx<12; ++farbecode) {
+            for (int format_idx; format_idx<4; ++format_idx) {
+                
+                if(strcmp(w1[idx], farbe[farbe_idx][format_idx])==0){
+                    switch (idx) {
+
+                        case 0:widerstand.Ring_1_nr=farbe_idx+1;break;  //1st Ring
+
+                        case 1:widerstand.Ring_2_nr=farbe_idx+1;break;  //2te Ring
+
+                        case 2:                                         //3te Ring
+                            if (AnzahlRing==4) {                //4er Ring
+                                switch (farbe_idx) {
+                                    case 10:widerstand.Multifakt=0.1;break;
+                                    case 11:widerstand.Multifakt=0.01;break;
+                                    default:
+                                        if (farbe_idx<7)
+                                            widerstand.Multifakt=pow(10.0 , (double)farbe_idx);
+                                        break;
+                                        
+                                }
+                            }else {                             //5er, 6er Ring
+                                widerstand.Ring_3_nr=farbe_idx+1;
+                            }
+                            break;
+
+                        case 3:                                         //4te Ring
+                            if (AnzahlRing==4) {                //4er Ring
+                                switch (farbe_idx) {
+                                    case 1:strcpy(widerstand.Toleranz,"1%%");break;
+                                    case 2:strcpy(widerstand.Toleranz,"2%%");break;
+                                    case 5:strcpy(widerstand.Toleranz,"0.5%%");break;
+                                    case 6:strcpy(widerstand.Toleranz,"0.25%%");break;
+                                    case 7:strcpy(widerstand.Toleranz,"0.1%%");break;
+                                    case 10:strcpy(widerstand.Toleranz,"5%%");break;
+                                    case 11:strcpy(widerstand.Toleranz,"10%%");break;
+                                }
+                            }
+                            else {
+                                switch (farbe_idx) {            //5er, 6er Ring
+                                    case 10:widerstand.Multifakt=0.1;break;
+                                    case 11:widerstand.Multifakt=0.01;break;
+                                    default:
+                                        if (farbe_idx<7)
+                                            widerstand.Multifakt=pow(10.0 , (double)farbe_idx);
+                                        break;
+                                        
+                                }
+                            }
+                            break;
+                        
+                        case 4:                                         //5te Ring
+                            switch (farbe_idx) {
+                                    case 1:strcpy(widerstand.Toleranz,"1%%");break;
+                                    case 2:strcpy(widerstand.Toleranz,"2%%");break;
+                                    case 5:strcpy(widerstand.Toleranz,"0.5%%");break;
+                                    case 6:strcpy(widerstand.Toleranz,"0.25%%");break;
+                                    case 7:strcpy(widerstand.Toleranz,"0.1%%");break;
+                                    case 10:strcpy(widerstand.Toleranz,"5%%");break;
+                                    case 11:strcpy(widerstand.Toleranz,"10%%");break;
+                                }
+                            break;
+
+                        case 5:                                         //6te Ring
+                            switch (farbe_idx) {
+                                    case 0 :widerstand.Tempko=250;break;
+                                    case 1 :widerstand.Tempko=100;break;
+                                    case 2 :widerstand.Tempko=50;break;
+                                    case 3 :widerstand.Tempko=15;break;
+                                    case 4 :widerstand.Tempko=25;break;
+                                    case 5 :widerstand.Tempko=20;break;
+                                    case 6 :widerstand.Tempko=10;break;
+                                    case 7 :widerstand.Tempko=5;break;
+                                    case 8 :widerstand.Tempko=1;break;
+                                }
+                            break;
+
+                    }
+                }
+            }
+        }
         
     }
 
-    for (idx=0; idx<AnzahlRing; ++idx) {
+    /*for (idx=0; idx<AnzahlRing; ++idx) {
         int ring_minus=findeminus(ring[idx][languageNr]);
         for (int x=0; x<=ring_minus; ++x) {
             strcpy(w2,split(ring[idx][languageNr], '-', x));
@@ -62,10 +156,10 @@ struct resistor auswerten( char *farbecode, int AnzahlRing, int languageNr){
                
             }
         }
-    }
+    }*/
 
 
 
     
-    return x;
+    return widerstand;
 }
