@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "resistor.h"
 #include "findminus.c"
 #include "split.c"
@@ -53,7 +54,9 @@ struct resistor auswerten( char *farbecode, int AnzahlRing, int languageNr){
             strcpy(w2,split(ring[idx][languageNr], '-', x));
             if (x<=ring_minus) {
                 if (strcmp(w1[idx], w2)==0) {
-                    
+                    if (strcmp(w2, "black")==0) {
+                        
+                    }
                     break;
                 }
                
