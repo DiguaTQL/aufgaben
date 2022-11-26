@@ -12,8 +12,8 @@ char *inputcode(int AnzahlRing,int languageNr){
     Example[2][1]="Beispiel: gelb-violett-rot-orange-gold-gelb\noder \t  gb-vi-rt-or-gd-gb";
 
     char *color[2];
-    color[0]="Available colour: ! NO CAPs\nblack - bk | brown - bn | red - rd | orange - og | yellow - ye | green - gn\nblue - bu | violet - vt | grey - gy | white - wh | gold - gd | sliver - sr";
-    color[1]="Verfügbare Farbe: ! NICHT groß schreiben\nschwarz - sw | braun - br | rot - rt | orange - or | gelb - gb | grün - gn\nblau - bl | violett - vi | grau - gr | weiß - ws | gold - gd | silber - sr";
+    color[0]="Available colour:\t-!!!- NO CAPs -!!!-\nblack - bk | brown - bn | red - rd | orange - og | yellow - ye | green - gn\nblue - bu | violet - vt | grey - gy | white - wh | gold - gd | sliver - sr";
+    color[1]="Verfügbare Farbe:\t-!!!- NICHT groß schreiben -!!!-\nschwarz - sw | braun - br | rot - rt | orange - or | gelb - gb | grün - gn\nblau - bl | violett - vi | grau - gr | weiß - ws | gold - gd | silber - sr";
     //Norm IEC 60757 / DIN 47002
     printf("\n%s\n",Example[AnzahlRing-4][languageNr]);
     printf("%s\n",color[languageNr]);    

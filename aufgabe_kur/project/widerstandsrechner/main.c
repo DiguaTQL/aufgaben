@@ -7,26 +7,22 @@
 #include "auswerten.c"
 #include "ausrechnen.c"
 
-/*
-struct resistor{
-    int Ring_1_nr, Ring_2_nr, Ring_3_nr, Multifakt, Tempko;
-    char Toleranz[10];
-};
-*/
-
 int main(void){
     /*
-    0.Sparche auswählen                 von language.c Rückgabe int. -done
-    1.Abfragen Anzahl der Ringe         von anzahlring.c Rückgabe int. -done.
-    2.Eingabe/Fabecode Beispeile fr-fr-fr-fr-fr so...    
-    2.5 Eingabe abfragen                von inputcode.c Rückgabe char. -done
-    3.if Eingabe nicht korrekt, dann analysieren welche Feherl und Fehler Tipps ausgeben        von codecheck.c Rückgabe char. 
-    3.5 Eingabe wieder abfragen         von inputcode.c Rückgabe char. -done
-    4.wenn Eingabe richtig sind, dann berechnen.    von ausrechnen.c -done
-    5.Wert anzeigen                                 von ausrechnen.c -done
+    Ablauf
+    0.Sparche auswählen                                                                         von language.c Rückgabe int. -done
+    1.Abfragen Anzahl der Ringe                                                                 von anzahlring.c Rückgabe int. -done.
+    2.Eingabe/Fabecode Beispeile fr-fr-fr-fr-fr so...                                           von inputcode.c Rückgabe char. -done
+    2.5 Eingabe abfragen                                                                        von inputcode.c Rückgabe char. -done
+    3.if Eingabe nicht korrekt, dann analysieren welche Feherl und Fehler Tipps ausgeben        von codecheck.c Rückgabe char. -done
+    3.5 Eingabe wieder abfragen                                                                 von inputcode.c Rückgabe char. -done
+    4 Eingabe zur struct "resistor" konvertieren.                                               von auswerten.c -done
+    5.wenn Eingabe richtig sind, dann berechnen.                                                von ausrechnen.c -done
+    6.Wert anzeigen                                                                             von ausrechnen.c -done
 
     struct resistor{
-        int Ring_1_nr, Ring_2_nr, Ring_3_nr, Multifakt, Tempko;
+        int Ring_1_nr, Ring_2_nr, Ring_3_nr, Tempko;
+        double  Multifakt;
         char Toleranz[10];
     }
 
@@ -38,14 +34,13 @@ int main(void){
     struct resistor widerstand;
     char *farbecode;
     int check=0;
-    int languageNr=language();
-    int iRingAnzahl=AnzahlRing(languageNr);
-    do {
-    
-    farbecode=inputcode(iRingAnzahl,languageNr);
-    check=codecheck(farbecode,iRingAnzahl,languageNr);
-    }while (check!=0);
-    widerstand=auswerten(farbecode, iRingAnzahl, languageNr);
-    ausrechnen(widerstand, iRingAnzahl, languageNr);
+    int languageNr=language();                                  //Schritt 0
+    int iRingAnzahl=AnzahlRing(languageNr);                     //Schritt 1
+    do {                                                        //Schritt 3.5
+        farbecode=inputcode(iRingAnzahl,languageNr);            //Schritt 2
+        check=codecheck(farbecode,iRingAnzahl,languageNr);      //Schritt 3
+    }while (check!=0);                                          //Schritt 3.5
+    widerstand=auswerten(farbecode, iRingAnzahl, languageNr);   //Schritt 4
+    ausrechnen(widerstand, iRingAnzahl, languageNr);            //Schritt 5 & 6
     return 0;
 }

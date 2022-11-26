@@ -47,7 +47,7 @@ char *split(char *input, char marker, int MarkerNr){
     //printf("In %s, Zeile %d, Input:%s, resule:%s, MarkerNr:%d\n",__FILE__,__LINE__,input,result,MarkerNr);
 
     /**********************************************************************
-    Test Schnitt 2, Fehlerhaft, Noch Herr Kurrek Fragen warum w1 nach strcpy immer noch alt Inhalt beibehalten
+    Test  2, Fehlerhaft, Noch Herr Kurrek Fragen warum w1 nach strcpy immer noch alt Inhalt beibehalten
     static char w1[99]="";
     //static char w1[]=""; //hier macht ein Fehler das w1 dierekt Inhalt von Input bekommt !!!!!!!!!!!!!!
     //-printf("In %s, Zeile %d, w1:%s, strlen of w1: %ld\n",__FILE__,__LINE__,w1,strlen(w1));
