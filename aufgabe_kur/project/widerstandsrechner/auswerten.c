@@ -25,12 +25,44 @@ struct resistor auswerten( char *farbecode, int AnzahlRing, int languageNr){
         ring[5][0]="brown-bn-red-rd-orange-og-yellow-ye-blue-bu-violet-vt";//Ring 6 PPM bei 6 
         ring[5][1]="braun-br-rot-rt-orange-or-gelb-gb-blau-bl-violett-vi";
     }
+    char *farbe[2];
+    char *Multiplikator[2];
+    char *Toleranz[2];
+    char *PPM[2];
+    farbe[0]="black-bk-brown-bn-red-rd-orange-og-yellow-ye-green-gn-blue-bu-violet-vt-grey-gy-white-wh";    
+    farbe[1]="schwarz-sw-braun-br-rot-rt-orange-or-gelb-gb-grün-gn-blau-bl-violett-vi-grau-gr-weiß-ws";    
+    Multiplikator[0]="black-bk-brown-bn-red-rd-orange-og-yellow-ye-green-gn-blue-bu-violet-vt-grey-gy-white-wh-gold-gd-sliver-sr";
+    Multiplikator[1]="schwarz-sw-braun-br-rot-rt-orange-or-gelb-gb-grün-gn-blau-bl-violett-vi-grau-gr-weiß-ws-gold-gd-silber-sr";
+    Toleranz[0]="brown-bn-red-rd-green-gn-blue-bu-violet-vt-grey-gy-gold-gd-sliver-sr";
+    Toleranz[1]="braun-br-rot-rt-grün-gn-blau-bl-violett-vi-grau-gr-gold-gd-silber-sr";
+    PPM[0]="brown-bn-red-rd-orange-og-yellow-ye-blue-bu-violet-vt";
+    PPM[1]="braun-br-rot-rt-orange-or-gelb-gb-blau-bl-violett-vi";
 
+
+    char w1[6][10]={{""}};
+    char w2[10]="";
     int idx = 0;
     for (idx =0; idx<AnzahlRing; ++idx) {
-        int minus=findeminus(ring[idx][languageNr]);
+        strcpy(w1[idx], split(farbecode, '-', idx));
         
     }
+
+    for (idx=0; idx<AnzahlRing; ++idx) {
+        int ring_minus=findeminus(ring[idx][languageNr]);
+        for (int x=0; x<=ring_minus; ++x) {
+            strcpy(w2,split(ring[idx][languageNr], '-', x));
+            if (x<=ring_minus) {
+                if (strcmp(w1[idx], w2)==0) {
+                    
+                    break;
+                }
+               
+            }
+        }
+    }
+
+
+
     
     return x;
 }
