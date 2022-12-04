@@ -1,5 +1,5 @@
 #include <stdio.h>
-int language(){
+int language(void){
     int languageNr;
     do {
     
