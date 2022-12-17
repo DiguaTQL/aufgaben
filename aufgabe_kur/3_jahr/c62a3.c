@@ -45,6 +45,7 @@ int main(void){
         }
 
     }
+    fclose(dm);
     printf("In Datei '%s':\nMin:%g\nMAX:%g\narithmetische Mittelwert:%g\n ",path,min,max,mid);
     return 0;
 }

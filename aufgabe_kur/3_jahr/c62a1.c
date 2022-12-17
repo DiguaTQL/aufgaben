@@ -39,6 +39,7 @@ int main(void){
         }
 
     }
+    fclose(dm);
     printf("In Datei '%s' gibt es %d Ziffern.\n ",path,counter);
     return 0;
 }
