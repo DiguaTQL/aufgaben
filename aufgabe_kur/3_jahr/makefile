@@ -3,5 +3,5 @@
 
 git:
 	git add .
-	git commit -m "$m"
+	git commit -m "ITA"
 	git push -u origin main 
