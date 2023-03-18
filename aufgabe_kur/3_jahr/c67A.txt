@@ -23,3 +23,9 @@ a) atexit_handler_t soll ein Typ für den Funktionszeiger sein, der als Paramete
 
 Lösung:
     typedef void(*atexit_handler_t)(void);
+
+4 Suche nach typedef
+a) In welchen Verzeichnis liegen in Ihren System die genannten Headerdateinen:
+    /usr/include:/usr/local/include
+
+b)
