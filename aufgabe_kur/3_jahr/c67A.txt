@@ -1,0 +1,12 @@
+1 
+a) uint_t soll ein Datentyp für 16 Bit lange voreichenlos Ganzehlen sein; auf PCs ist es meistens gleichbedeutend mit unsigned short:
+    typedef unsigned short uint16_T;
+
+b) l_double_ptr_t soll ein Datentyo sein für einen Zeiger auf long double:
+    typedef long double *l_double_ptr_t;
+
+c) screen_bitmap_t soll ein Typ für zweidimensionales Array (600 Zeilen, 800 Spalten, Element vom Typ int) sein:
+    typedef int screen_bitmap_t[600][800];
+
+d) persontyp soll ein neuer Name für den bereits bestehenden Typ struct person_t sein:
+    typedef struct person_t persontyp;
