@@ -1,4 +1,4 @@
-1 
+1  typedef für elementare Datentypen, Zeiger, Array und Records
 a) uint_t soll ein Datentyp für 16 Bit lange voreichenlos Ganzehlen sein; auf PCs ist es meistens gleichbedeutend mit unsigned short:
     typedef unsigned short uint16_T;
 
@@ -10,3 +10,16 @@ c) screen_bitmap_t soll ein Typ für zweidimensionales Array (600 Zeilen, 800 Sp
 
 d) persontyp soll ein neuer Name für den bereits bestehenden Typ struct person_t sein:
     typedef struct person_t persontyp;
+
+2 typedef für Prototypen
+a) ctype_funktion_t soll ein Typ für die Prototypen der Bibliotheksfunktionen sein, die in ctype.h deklariert werden (wie z.B. tolower()):
+    typedef int ctype_funktion_t(int);
+    Danach: ctype_funktion_t meintoupper, meintolower;
+
+3 typedef für Funktionszeiger
+Erstellen Sie mit typedef die geeigneten Datentypen für Funktionszeiger!
+a) atexit_handler_t soll ein Typ für den Funktionszeiger sein, der als Parameter der Bibliotheksfunktionen atexit() dient, so dass atexit() auch so deklariert werden kann:
+    int atexit(atexit_handler_t);
+
+Lösung:
+    typedef void(*atexit_handler_t)(void);
