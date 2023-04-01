@@ -4,9 +4,11 @@
 
 int main(void){
     int prg_nr=0;
-    double *points[2];
+    double *points;
 
-    calloc(unsigned long, unsigned long)
+    //for(int x=0, x < 2, ++x){
+    //    points[x]=(double*)calloc(unsigned long, sizeof(double))
+    //}
 
     do {
     
