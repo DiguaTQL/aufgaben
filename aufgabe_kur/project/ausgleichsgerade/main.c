@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "menue.c"
+#include "aufnehmen.c"
 
 int main(void){
     int prg_nr=0;
@@ -13,7 +14,7 @@ int main(void){
     do {
     
         prg_nr=menue();
-        printf("Ihre Wahl ist %d.\n",prg_nr);
+        //printf("Ihre Wahl ist %d.\n",prg_nr);
 
 
         switch (prg_nr) {
@@ -22,6 +23,7 @@ int main(void){
                 break;
             
             case 1:// (1)Daten aufnehmen
+                points=eingabe();
                 break;
             
             case 2:// (2)Daten ausgeben
