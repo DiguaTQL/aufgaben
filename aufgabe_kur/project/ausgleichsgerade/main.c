@@ -2,14 +2,12 @@
 #include <stdlib.h>
 #include "menue.c"
 #include "aufnehmen.c"
+#include "ausgeben.c"
+#include "datafix.c"
 
 int main(void){
     int prg_nr=0;
     double **points;
-
-    //for(int x=0, x < 2, ++x){
-    //    points[x]=(double*)calloc(unsigned long, sizeof(double))
-    //}
 
     do {
     
@@ -24,13 +22,14 @@ int main(void){
             
             case 1:// (1)Daten aufnehmen
                 points=eingabe();
-                printf("%lf,%lf\n",points[0][0],points[0][1]);
                 break;
             
             case 2:// (2)Daten ausgeben
+                showlist(points);
                 break;
             
             case 3:// (3)Daten korrigieren
+                points=fix(points);
                 break;
             
             case 4:// (4)Daten speichern

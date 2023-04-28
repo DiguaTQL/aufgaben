@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int menue(){
+int menue(void){
     int prg_nr=0;
 
-    puts("Berechnung einer Ausgleichsgeraden");
+    puts("Berechnung einer Ausgleichsgeraden");                     // Menü anzeigen
     puts("==================================");
     puts("(1) Daten aufnehmen");
     puts("(2) Daten ausgeben");
@@ -15,15 +15,8 @@ int menue(){
     puts("(0) Ende");
     puts("Treffen Sie eine Wahl:");
 
-    scanf("%d",&prg_nr);
-    return prg_nr;
-
-
-
-
-
-
-
-
+    scanf("%d",&prg_nr);                                            // Menü Nummer lesen
+    while (getchar()!='\n') {}                                      
+    return prg_nr;                                                  // Menü Nummer zurückgeben
 
 }

@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static void free_pointers(double **arr, size_t size){
-    for (size_t i=0; i<size; ++i) {
+static void free_pointers(double **arr, size_t size){               // Welche double Pointer soll befreit werten und Größe als Paramter
+    for (size_t i=0; i<size; ++i) {                                 // 2te Pointer sollt befreit werden
         free(arr[i]);
     }
-    free(arr);
+    free(arr);                                                      // 1st Pointer sollt befreit werden
+    return;                                                         // kein Rückgabe
 }
 
 double** eingabe(){
@@ -39,8 +40,10 @@ double** eingabe(){
 
         printf("%d.\tPunkt : x:",counter+1);
         scanf("%lf",&pointlist[counter][0]);                        // Punkt x schreiben
+        while (getchar()!='\n') {}
         printf("\tPunkt : y:");
         scanf("%lf",&pointlist[counter][1]);                        // Punkt y schreiben
+        while (getchar()!='\n') {}
 
         //printf("%lf,%lf,%lf,%lf\n",pointlist[0][0],pointlist[counter][0],pointlist[0][1],pointlist[counter][1]);
 
@@ -55,8 +58,9 @@ double** eingabe(){
 
     }
 
-    return pointlist;                                               // Liste rückgeben
+
+    printf("%d Punkte wurden aufgenommen.\n\n",counter);
+    return pointlist;                                               // Liste zurückgeben
     free_pointers(pointlist, counter);                              // Resavierung befreien
 
-    puts("");
 }
