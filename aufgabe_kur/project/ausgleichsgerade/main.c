@@ -7,13 +7,11 @@
 
 int main(void){
     int prg_nr=0;
-    double **points;
+    double **points;                                            // Pointliste ist ein Pointer auf Pointer
 
     do {
     
         prg_nr=menue();
-        //printf("Ihre Wahl ist %d.\n",prg_nr);
-
 
         switch (prg_nr) {
             case 0:// (0) Ende

@@ -9,7 +9,7 @@ void showlist(double **list){                                                // 
         printf("%d.\tPunkt : x: %g\n",counter+1,list[counter][0]);          // Punkt x anzeigen
         printf("\tPunkt : y: %g\n",list[counter][1]);                       // Punkt y anzeigen
         ++counter;
-    }while ((list[0][0]!=list[counter][0] && list[0][1]!=list[counter][1])|| counter <=1);
+    }while ((list[0][0]!=list[counter][0] && list[0][1]!=list[counter][1])|| counter <1);
     puts("Zur Fortsetzung <Enter> drücken");                                
     getchar();                                                              // Auf <Enter> warten
     return;                                                                 // Kein Rückgabe
