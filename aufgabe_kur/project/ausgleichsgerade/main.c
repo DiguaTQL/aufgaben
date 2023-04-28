@@ -24,7 +24,7 @@ int main(void){
             
             case 1:// (1)Daten aufnehmen
                 points=eingabe();
-                printf("%lf,%lf\n",points[0][0],points[1][0]);
+                printf("%lf,%lf\n",points[0][0],points[0][1]);
                 break;
             
             case 2:// (2)Daten ausgeben
