@@ -18,7 +18,7 @@ double** eingabe(){
     puts("(1) Daten aufnehmen:    (Ende: Ersten Punkt noch einmal eingeben)");
     puts("--------------------");
 
-    while (check ==1) {                                             // While 
+    while (check ==1) {                                             
         
         if (counter == maxcount) {                                  // Wenn maximale Anzahl erreicht hat
             size_t newcount = (maxcount +2) * 2;                    // Resavierung immer 8*x mehr
