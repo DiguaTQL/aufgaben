@@ -5,7 +5,7 @@
 
 int main(void){
     int prg_nr=0;
-    double *points;
+    double **points;
 
     //for(int x=0, x < 2, ++x){
     //    points[x]=(double*)calloc(unsigned long, sizeof(double))
@@ -24,6 +24,7 @@ int main(void){
             
             case 1:// (1)Daten aufnehmen
                 points=eingabe();
+                printf("%lf,%lf\n",points[0][0],points[1][0]);
                 break;
             
             case 2:// (2)Daten ausgeben

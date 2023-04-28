@@ -1,43 +1,63 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-double **eingabe(){
+static void free_pointers(double **arr, size_t size){
+    for (size_t i=0; i<size; ++i) {
+        free(arr[i]);
+    }
+    free(arr);
+}
 
-    double *pointlist[2];
-    int a=0,b=1;
+
+double** eingabe(){
+
+    double **pointlist=0;
+    double maxcount=0;
+    int counter=0,check=1;
 
     puts("(1) Daten aufnehmen:    (Ende: Ersten Punkt noch einmal eingeben)");
     puts("--------------------");
 
-    while (b ==1) {
-
-        for(int x=0; x < 2; ++x){
-            pointlist[x]=(double*)calloc(a+1, sizeof(double));
-            if(pointlist[x]==NULL){
-                puts("calloc-Fehler!");
-                break;
+    while (check ==1) {
+        
+        if (counter == maxcount) {
+            size_t newcount = (maxcount +2) * 2;
+            double **newptr = (double**)realloc(pointlist, newcount*sizeof(*pointlist));
+            if(newptr==NULL){
+                free_pointers(pointlist, counter);
+                puts("malloc-Fehler!");
+                exit(1);
             }
+            maxcount=newcount;
+            pointlist=newptr;
+        }
+        pointlist[counter]=(double*)malloc(2*sizeof(double));
+        if(pointlist[counter]==NULL){
+            free_pointers(pointlist, counter);
+            puts("malloc-Fehler!");
+            exit(1);
         }
 
-        printf("%d.\tPunkt : x:",a+1);
-        scanf("%lf",&pointlist[0][a]);
+        printf("%d.\tPunkt : x:",counter+1);
+        scanf("%lf",&pointlist[counter][0]);
         printf("\tPunkt : y:");
-        scanf("%lf",&pointlist[1][a]);
+        scanf("%lf",&pointlist[counter][1]);
 
-        if ((pointlist[0][0]==pointlist[0][a] && pointlist[1][0]==pointlist[1][a]) && a>0) {
-            b=0;
+        printf("%lf,%lf,%lf,%lf\n",pointlist[0][0],pointlist[counter][0],pointlist[0][1],pointlist[counter][1]);
+
+        if ((pointlist[0][0]==pointlist[counter][0] && pointlist[0][1]==pointlist[counter][1]) && counter>0) {
+            check=0;
         }
         else {
-            b=1;
-            ++a;
+            check=1;
+            ++counter;
         }
 
 
     }
 
-    for(int m=0; m<a ;++m)
-        free(pointlist[m]);
+    return pointlist;
+    free_pointers(pointlist, counter);
 
     puts("");
-    return pointlist;
 }
