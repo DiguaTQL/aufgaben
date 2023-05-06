@@ -21,6 +21,7 @@ double** laden(double **liste, int *anzahl){
     double **pointlist=0;                                           // Pointer auf Pointer erstellen
     double maxcount=0;
     int counter=0,check=1;
+    double point=0;
 
     file=fopen(filename, 'r');
     if (file == NULL) {
@@ -48,25 +49,26 @@ double** laden(double **liste, int *anzahl){
             exit(1);
         }
 
-        printf("%d.\tPunkt : x:",counter+1);
-        scanf("%lf",&pointlist[counter][0]);                        // Punkt x schreiben
-        while (getchar()!='\n') {}
-        printf("\tPunkt : y:");
-        scanf("%lf",&pointlist[counter][1]);                        // Punkt y schreiben
-        while (getchar()!='\n') {}
+        //printf("%d.\tPunkt : x:",counter+1);
+        //scanf("%lf",&pointlist[counter][0]);                        // Punkt x schreiben
+        //while (getchar()!='\n') {}
+        //printf("\tPunkt : y:");
+        //scanf("%lf",&pointlist[counter][1]);                        // Punkt y schreiben
+        //while (getchar()!='\n') {}
 
+        while(fscanf(file, "%lf %lf", &pointlist[counter][0],&pointlist[counter][1])==2){ ++counter;check =1;}
         //printf("%lf,%lf,%lf,%lf\n",pointlist[0][0],pointlist[counter][0],pointlist[0][1],pointlist[counter][1]);
 
-        if ((pointlist[0][0]==pointlist[counter][0] && pointlist[0][1]==pointlist[counter][1]) && counter>0) {      //Überprüfen ob Eingabe mit 0te Eingabe übereinstimmen
-            check=0;                                                // ja, while Bedingung zürücksetzen
-        }
-        else {
-            check=1;                                                // nein, weiter
-            ++counter;
-        }
+        //if ((pointlist[0][0]==pointlist[counter][0] && pointlist[0][1]==pointlist[counter][1]) && counter>0) {      //Überprüfen ob Eingabe mit 0te Eingabe übereinstimmen
+        //    check=0;                                                // ja, while Bedingung zürücksetzen
+        //}
+        //else {
+        //    check=1;                                                // nein, weiter
+        //    ++counter;
+        //}
     }
 
-    printf("%d Punkte wurden aufgenommen.\n\n",counter);
+    printf("s wurden %d Wertepaare geladen.\n\n",counter);
     *anzahl=counter;
     return pointlist;                                               // Liste zurückgeben
     free_pointers(pointlist, counter);                              // Reservierung befreien

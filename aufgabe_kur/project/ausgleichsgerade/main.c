@@ -55,7 +55,7 @@ int main(void){
             
             case 5:// (5)Daten laden
                 if (points!=0) {
-                    ;
+                    points=laden(points,counter);
                 }
                 else
                 {
