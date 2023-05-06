@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#ifndef _free_pointers_
-#define _free_pointers_
 static void free_pointers(double **arr, size_t size){               // Welche double Pointer soll befreit werten und Größe als Paramter
     for (size_t i=0; i<size; ++i) {                                 // 2te Pointer sollt befreit werden
         free(arr[i]);
@@ -10,16 +8,25 @@ static void free_pointers(double **arr, size_t size){               // Welche do
     free(arr);                                                      // 1st Pointer sollt befreit werden
     return;                                                         // kein Rückgabe
 }
-#endif
 
-double** eingabe(int *count){
+double** laden(double **liste, int *anzahl){
+    FILE *file;
+    char filename[256]="ag.txt";
+    puts("(5) Daten laden:");
+    puts("--------------------");
+    printf("Pfadname (Default: ag.txt): ");
+    scanf("%255[^\n]",filename);
+    while (getchar()!='\n') {}
 
     double **pointlist=0;                                           // Pointer auf Pointer erstellen
     double maxcount=0;
     int counter=0,check=1;
 
-    puts("(1) Daten aufnehmen:    (Ende: Ersten Punkt noch einmal eingeben)");
-    puts("--------------------");
+    file=fopen(filename, 'r');
+    if (file == NULL) {
+        perror(filename);
+        return 0;
+    }
 
     while (check ==1) {                                             
         
@@ -60,8 +67,7 @@ double** eingabe(int *count){
     }
 
     printf("%d Punkte wurden aufgenommen.\n\n",counter);
-    *count=counter;
+    *anzahl=counter;
     return pointlist;                                               // Liste zurückgeben
     free_pointers(pointlist, counter);                              // Reservierung befreien
-
 }
