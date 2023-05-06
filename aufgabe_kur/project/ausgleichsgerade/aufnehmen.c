@@ -9,7 +9,7 @@ static void free_pointers(double **arr, size_t size){               // Welche do
     return;                                                         // kein Rückgabe
 }
 
-double** eingabe(){
+double** eingabe(int *count){
 
     double **pointlist=0;                                           // Pointer auf Pointer erstellen
     double maxcount=0;
@@ -57,6 +57,7 @@ double** eingabe(){
     }
 
     printf("%d Punkte wurden aufgenommen.\n\n",counter);
+    *count=counter;
     return pointlist;                                               // Liste zurückgeben
     free_pointers(pointlist, counter);                              // Reservierung befreien
 

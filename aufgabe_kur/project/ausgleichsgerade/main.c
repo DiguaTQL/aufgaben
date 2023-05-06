@@ -4,10 +4,11 @@
 #include "aufnehmen.c"
 #include "ausgeben.c"
 #include "datafix.c"
+#include "savefile.c"
 
 int main(void){
-    int prg_nr=0;
-    double **points;                                            // Pointliste ist ein Pointer auf Pointer
+    int prg_nr=0,counter=0;
+    double **points=0;                                            // Pointliste ist ein Pointer auf Pointer
 
     do {
     
@@ -19,28 +20,62 @@ int main(void){
                 break;
             
             case 1:// (1)Daten aufnehmen
-                points=eingabe();
+                points=eingabe(&counter);
                 break;
             
             case 2:// (2)Daten ausgeben
-                showlist(points);
+                if (points!=0) {
+                    ausgabe(points);
+                }
+                else
+                {
+                    puts("Keine Daten vorhand!\n");
+                }
                 break;
             
             case 3:// (3)Daten korrigieren
-                points=fix(points);
+                if (points!=0) {
+                    points=korrektur(points,counter);
+                }
+                else
+                {
+                    puts("Keine Daten vorhand!\n");
+                }
                 break;
             
             case 4:// (4)Daten speichern
+                if (points!=0) {
+                    savefile(**points,counter);
+                }
+                else
+                {
+                    puts("Keine Daten vorhand!\n");
+                }
                 break;
             
             case 5:// (5)Daten laden
+                if (points!=0) {
+                    ;
+                }
+                else
+                {
+                    puts("Keine Daten vorhand!\n");
+                }
                 break;
             
             case 6:// (6)Ausgleichsgerade ermitteln
+                if (points!=0) {
+                    ;
+                }
+                else
+                {
+                    puts("Keine Daten vorhand!\n");
+                }
                 break;
 
+            default:
+                puts("Eingabe ungültig!\n");
 
-        
         }
     }while ( prg_nr != 0);
 
