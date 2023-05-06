@@ -45,7 +45,7 @@ int main(void){
             
             case 4:// (4)Daten speichern
                 if (points!=0) {
-                    savefile(**points,counter);
+                    speichern(points,counter);
                 }
                 else
                 {

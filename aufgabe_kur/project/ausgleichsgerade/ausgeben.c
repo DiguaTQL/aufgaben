@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 
 void ausgabe(double **list){                                                // Eingegebene Liste als Parameter
     int counter=0;
