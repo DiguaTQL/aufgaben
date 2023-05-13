@@ -23,7 +23,7 @@ double** laden(double **liste, int *anzahl){
     int counter=0,check=1;
     double point=0;
 
-    file=fopen(filename, 'r');
+    file=fopen(filename, "r");
     if (file == NULL) {
         perror(filename);
         return 0;
