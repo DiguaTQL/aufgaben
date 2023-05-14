@@ -7,6 +7,7 @@
 #include "savefile.c"
 #include "loadfile.c"
 #include "calculate.c"
+#include "grafik.c"
 
 int main(void){
     char prg_nr;
@@ -76,7 +77,7 @@ int main(void){
 
             case 55:// (7)Grafik erstellen              ASCII 55 = 7
                 if (points!=0) {
-                    ;
+                    grafik(points,counter);
                 }
                 else
                 {

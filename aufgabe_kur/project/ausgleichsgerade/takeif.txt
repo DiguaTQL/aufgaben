@@ -1,0 +1,2 @@
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/*.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/makefile

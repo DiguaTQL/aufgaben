@@ -4,15 +4,15 @@
 
 void grafik(double** liste, int Anzahl){
     char s[4]="";
-    if(liner_init()!=0){
-        perror("Liner Error");
-        return;
-    }
-    puts("1");
-    //if(liner_init_xywh(0,1,10, 10, 640, 840)!=0){
+    //if(liner_init()!=0){
     //    perror("Liner Error");
     //    return;
     //}
+    puts("1");
+    if(liner_init_xywh(0,0,10, 10, 640, 840)!=0){
+        perror("Liner Error");
+        return;
+    }
     puts("2");
     line(0, 10, 600, 10);
     line(10, 0, 440, 0);
@@ -28,7 +28,7 @@ void grafik(double** liste, int Anzahl){
     text(5, 100, "Y");
 
     puts("5");
-    sleep(5);
+    //sleep(5);
     puts("6");
     liner_exit();
     puts("7");
