@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "aufnehmen.c"
 
-double** laden(double **liste, int *anzahl){
+double** laden(double **liste, int *Anzahl){
     FILE *file;
     char filename[256]="ag.txt";
     puts("(5) Daten laden:");
@@ -52,7 +52,7 @@ double** laden(double **liste, int *anzahl){
     }
 
     printf("Es wurden %d Wertepaare geladen.\n\n",counter);
-    *anzahl=counter;
+    *Anzahl=counter;
     return pointlist;                                               // Liste zurückgeben
     free_pointers(pointlist, counter);                              // Reservierung befreien
 }

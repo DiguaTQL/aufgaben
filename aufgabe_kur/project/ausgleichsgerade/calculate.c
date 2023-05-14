@@ -18,10 +18,7 @@ void berechnung(double** liste, int Anzahl){
 
     printf("b = %.2g\n",b);
     printf("m = %.2g\n",m);
-    if (m>0)                                                
-        printf("y = %.2g + %.2gx\n\n",b,m);                   // Ausgleichsgerade zusammenstellen
-    else                                                    // falls m < 0, Gleichung anpassen
-        printf("y = %.2g %.2gx\n\n",b,m);
+    printf("y = %.2g + %.2gx\n\n",b,m);                   // Ausgleichsgerade zusammenstellen
 
     return;
 }
