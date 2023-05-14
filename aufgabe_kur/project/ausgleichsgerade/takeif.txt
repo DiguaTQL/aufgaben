@@ -1,2 +1,11 @@
-wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/*.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/aufnehmen.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/ausgeben.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/calculate.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/datafix.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/grafik.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/loadfile.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/main.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/menue.c
+wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/savefile.c
 wget https://raw.githubusercontent.com/DiguaTQL/aufgaben/main/aufgabe_kur/project/ausgleichsgerade/makefile
+#ausführen mit "sh takeit.txt"
