@@ -12,6 +12,8 @@ static void free_pointers(double **arr, size_t size){               // Welche do
 }
 #endif
 
+#ifndef _eingabe_
+#define _eingabe_
 double** eingabe(int *count){
 
     double **pointlist=0;                                           // Pointer auf Pointer erstellen
@@ -48,8 +50,6 @@ double** eingabe(int *count){
         scanf("%lf",&pointlist[counter][1]);                        // Punkt y schreiben
         while (getchar()!='\n') {}
 
-        //printf("%lf,%lf,%lf,%lf\n",pointlist[0][0],pointlist[counter][0],pointlist[0][1],pointlist[counter][1]);
-
         if ((pointlist[0][0]==pointlist[counter][0] && pointlist[0][1]==pointlist[counter][1]) && counter>0) {      //Überprüfen ob Eingabe mit 0te Eingabe übereinstimmen
             check=0;                                                // ja, while Bedingung zürücksetzen
         }
@@ -65,3 +65,4 @@ double** eingabe(int *count){
     free_pointers(pointlist, counter);                              // Reservierung befreien
 
 }
+#endif

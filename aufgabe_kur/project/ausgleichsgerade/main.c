@@ -5,9 +5,12 @@
 #include "ausgeben.c"
 #include "datafix.c"
 #include "savefile.c"
+#include "loadfile.c"
+#include "calculate.c"
 
 int main(void){
-    int prg_nr=0,counter=0;
+    char prg_nr;
+    int counter=0;
     double **points=0;                                            // Pointliste ist ein Pointer auf Pointer
 
     do {
@@ -15,17 +18,17 @@ int main(void){
         prg_nr=menue();
 
         switch (prg_nr) {
-            case 0:// (0) Ende
+            case 48:// (0) Ende     ASCII 48 = 0
                 puts("Programm Ende!");
                 break;
             
-            case 1:// (1)Daten aufnehmen
+            case 49:// (1)Daten aufnehmen       ASCII 49 = 1
                 points=eingabe(&counter);
                 break;
             
-            case 2:// (2)Daten ausgeben
+            case 50:// (2)Daten ausgeben        ASCII 50 = 2
                 if (points!=0) {
-                    ausgabe(points);
+                    ausgabe(points,counter);
                 }
                 else
                 {
@@ -33,7 +36,7 @@ int main(void){
                 }
                 break;
             
-            case 3:// (3)Daten korrigieren
+            case 51:// (3)Daten korrigieren     ASCII 51 = 3
                 if (points!=0) {
                     points=korrektur(points,counter);
                 }
@@ -43,7 +46,7 @@ int main(void){
                 }
                 break;
             
-            case 4:// (4)Daten speichern
+            case 52:// (4)Daten speichern       ASCII 52 = 4
                 if (points!=0) {
                     speichern(points,counter);
                 }
@@ -53,17 +56,25 @@ int main(void){
                 }
                 break;
             
-            case 5:// (5)Daten laden
+            case 53:// (5)Daten laden           ASCII 53 = 5
+                points=laden(points,&counter);
+                if (points==0) {
+                
+                    puts("Keine Daten vorhand!\n");
+                }
+                break;
+            
+            case 54:// (6)Ausgleichsgerade ermitteln    ASCII 54 = 6
                 if (points!=0) {
-                    points=laden(points,counter);
+                    berechnung(points,counter);
                 }
                 else
                 {
                     puts("Keine Daten vorhand!\n");
                 }
                 break;
-            
-            case 6:// (6)Ausgleichsgerade ermitteln
+
+            case 55:// (7)Grafik erstellen              ASCII 55 = 7
                 if (points!=0) {
                     ;
                 }
@@ -77,7 +88,7 @@ int main(void){
                 puts("Eingabe ungültig!\n");
 
         }
-    }while ( prg_nr != 0);
+    }while ( prg_nr != 48);
 
     return 0;
 }   
