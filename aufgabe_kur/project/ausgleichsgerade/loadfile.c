@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "aufnehmen.c"
 
-double** laden(double **liste, int *Anzahl){
+double** laden(int *Anzahl){
     FILE *file;
     char filename[256]="ag.txt";
     puts("(5) Daten laden:");

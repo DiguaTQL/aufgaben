@@ -58,7 +58,7 @@ int main(void){
                 break;
             
             case 53:// (5)Daten laden           ASCII 53 = 5
-                points=laden(points,&counter);
+                points=laden(&counter);
                 if (points==0) {
                 
                     puts("Keine Daten vorhand!\n");
