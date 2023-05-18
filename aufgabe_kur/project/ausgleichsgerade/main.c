@@ -60,13 +60,15 @@ int main(void){
             case 53:// (5)Daten laden           ASCII 53 = 5
                 points=laden(&counter);
                 if (points==0) {
-                
                     puts("Keine Daten vorhand!\n");
                 }
                 break;
             
             case 54:// (6)Ausgleichsgerade ermitteln    ASCII 54 = 6
-                if (points!=0) {
+                if (counter == 1) {
+                    puts("Ausgleichsgerade existiert nicht, da nur ein Punkt vorhanden ist.\n");
+                }
+                else if (points!=0) {
                     berechnung(points,counter);
                 }
                 else
@@ -76,7 +78,10 @@ int main(void){
                 break;
 
             case 55:// (7)Grafik erstellen              ASCII 55 = 7
-                if (points!=0) {
+                if (counter == 1) {
+                    puts("Ausgleichsgerade existiert nicht, da nur ein Punkt vorhanden ist.\n");
+                }
+                else if (points!=0) {
                     grafik(points,counter);
                 }
                 else
