@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void speichern(double **liste, int anzahl){
+void speichern(double **liste, int Anzahl){
     FILE *file;
     char filename[256]="ag.txt";
     puts("(4) Daten speichern:");
@@ -15,10 +15,10 @@ void speichern(double **liste, int anzahl){
         perror(filename);
         return;
     }
-    for (int x=0; x<anzahl; ++x) {
+    for (int x=0; x<Anzahl; ++x) {
         fprintf(file, "%g %g\n", liste[x][0],liste[x][1]);
     }
     fclose(file);
-    printf("Es wurden %d Wertepaare gespeichert.\n\n", anzahl);
+    printf("Es wurden %d Wertepaare gespeichert.\n\n", Anzahl);
     return;
 }
