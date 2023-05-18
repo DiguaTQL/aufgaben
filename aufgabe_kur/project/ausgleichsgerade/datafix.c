@@ -8,7 +8,7 @@ double** korrektur(double** list, int Anzahl){                                  
     scanf("%d",&nr);                                               // Wunschnummer fragen
     while (getchar()!='\n') {}
     if (nr <= Anzahl &&  nr >0) {
-        while(nr !=0) {
+        while(nr <= Anzahl &&  nr >0) {
             printf("Alter x-Werte = %g\n",list[nr-1][0]);
             printf("Neuer x-Werte : ");
             scanf("%lf",&list[nr-1][0]);                               // Neu x-Wert schreiben
@@ -22,6 +22,9 @@ double** korrektur(double** list, int Anzahl){                                  
             while (getchar()!='\n') {}
 
         }
+    }
+    if (nr == 0) {
+        puts("Ende");
     }
     else {
         puts("Ungültige Eingabe!");
