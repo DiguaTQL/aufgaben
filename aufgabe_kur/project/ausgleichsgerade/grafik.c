@@ -20,25 +20,30 @@ void grafik(double** liste, int Anzahl){
 
     /*
         SVG
-            --> x+
-         |  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-         |  x                                 x
-         v  x |                               x
-            x |                x              x
-         y  x |                               x
-         +  x |                               x
-            x |                               x
-            x |             x                 x
-            x |                               x
-            x |    x                          x
-            x |                               x
-            x |                               x
-            x -----------------------------   x
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-        
+            --> x+                              _
+        |   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ^
+        |   x                                 x |
+        v   x |                               x 
+            x |                x              x 
+        y   x |                               x 
+        +   x |                               x 
+            x |                               x svg_height
+            x |             x                 x 
+            x |                               x 
+            x |    x                          x 
+            x |                               x 
+            x |                               x |
+            x -----------------------------   x v
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx _
+            |<-          svg_width          ->|     
+
+        x_offset : offset for y scale to svg_width
+        y_offset : offset for x scale to svg_height
+        x_maxscale : number of the points on x axis (without 0 point)
+        y_maxscale : number of the points on y axis (without 0 point)
     */
 
-    double svg_width =1000, svg_height =1000, x_offset=50,y_offset=50, x_maxscale=10,y_maxscale=10;
+    double svg_width =1000, svg_height =1000, x_offset=50,y_offset=50, x_maxscale=10, y_maxscale=10;
 
     FILE *file;
     char svg[256] = "ausgleichsgerade.svg";

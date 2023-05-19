@@ -31,7 +31,7 @@ int main(void){
                 else
                 {
                     puts("Wenn keine Daten auf dem Bildschirm ausgegeben werden können, wird folgende Fehlermeldung ausgegeben:");
-                    puts("Keine Daten vorhand!\n");
+                    puts("Keine Daten vorhanden!\n");
                 }
                 break;
             
@@ -45,7 +45,7 @@ int main(void){
                 else
                 {
                     puts("Wenn keine Daten korrigiert werden können, wird folgende Fehlermeldung ausgegeben:");
-                    puts("Keine Daten vorhand!\n");
+                    puts("Keine Daten vorhanden!\n");
                 }
                 break;
             
@@ -59,7 +59,7 @@ int main(void){
                 else
                 {
                     puts("Wenn keine Daten gespeichert werden können, wird folgende Fehlermeldung ausgegeben:");
-                    puts("Keine Daten vorhand!\n");
+                    puts("Keine Daten vorhanden!\n");
                 }
                 break;
             
@@ -69,7 +69,7 @@ int main(void){
                 puts("Hier wird Funktion laden(int *Anzahl) aufgerufen.");
                 if (points==0) {
                     puts("Wenn keine Daten von Datei geladen werden können, wird folgende Fehlermeldung ausgegeben:");
-                    puts("Keine Daten vorhand!\n");
+                    puts("Keine Daten vorhanden!\n");
                 }
                 break;
             
@@ -86,7 +86,7 @@ int main(void){
                 else
                 {
                     puts("Wenn keine Daten zur Ausgleichsgerade ermittelt werden können, wird folgende Fehlermeldung ausgegeben:");
-                    puts("Keine Daten vorhand!\n");
+                    puts("Keine Daten vorhanden!\n");
                 }
                 break;
 
@@ -103,7 +103,7 @@ int main(void){
                 else
                 {
                     puts("Wenn keine Daten zur Grafikerstellung verwendet werden können, wird folgende Fehlermeldung ausgegeben:");
-                    puts("Keine Daten vorhand!\n");
+                    puts("Keine Daten vorhanden!\n");
                 }
                 break;
 
