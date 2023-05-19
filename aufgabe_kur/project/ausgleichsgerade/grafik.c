@@ -120,7 +120,7 @@ void grafik(double** liste, int Anzahl){
     fprintf(dm, "</svg>\n");
     fclose(dm);
 
-    printf("SVG-Datei erfolgreich gespeichert!\n");
+    puts("SVG-Datei erfolgreich gespeichert!\n");
     
     // Öffnen der SVG-Datei mit Inkscape
     char command[100];
