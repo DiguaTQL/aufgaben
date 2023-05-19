@@ -92,6 +92,7 @@ int main(void){
 
             case 55:// (7)Grafik erstellen              ASCII 55 = 7
                 printf("Menüauswahl: %c\n",prg_nr[i]);
+                puts("Hier wird Funktion grafik(double** liste, int Anzahl) aufgerufen.");
                 if (counter == 1) {
                     puts("Ausgleichsgerade existiert nicht, da nur ein Punkt vorhanden ist.\n");
                 }
