@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 void grafik(double** liste, int Anzahl){
@@ -125,6 +126,7 @@ void grafik(double** liste, int Anzahl){
     char command[100];
     sprintf(command, "inkscape ausgleichsgerade.svg");
     system(command);
+
     return ;
 
 }
