@@ -1,4 +1,3 @@
-HEADERS = resistor.h
 OBJECTS = main.c
 
 default:
