@@ -43,7 +43,7 @@ void grafik(double** liste, int Anzahl){
     FILE *file;
     char svg[256] = "ausgleichsgerade.svg";
     file = fopen(svg,"w");
-    if (!file) { 
+    if (file == NULL) { 
         perror(svg); 
         return;;
     }
