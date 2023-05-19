@@ -52,6 +52,7 @@ double** laden(int *Anzahl){
     }
 
     printf("Es wurden %d Wertepaare geladen.\n\n",counter);
+    fclose(file);
     *Anzahl=counter;
     return pointlist;                                               // Liste zurückgeben
     free_pointers(pointlist, counter);                              // Reservierung befreien

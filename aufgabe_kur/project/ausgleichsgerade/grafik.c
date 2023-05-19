@@ -52,10 +52,7 @@ void grafik(double** liste, int Anzahl){
     fprintf(file, "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"%g\" height=\"%g\">\n",svg_width,svg_height);
 
     // Bestimmung der Größe des Koordinatensystems(Max-Wert)
-    double xMax = liste[0][0];
-    double yMax = liste[0][1];
-    double xMin = liste[0][0];
-    double yMin = liste[0][1];
+    double xMax = liste[0][0], yMax = liste[0][1], xMin = liste[0][0], yMin = liste[0][1];
 
     for (int i = 0; i < Anzahl; ++i) {
         if (liste[i][0] > xMax)
