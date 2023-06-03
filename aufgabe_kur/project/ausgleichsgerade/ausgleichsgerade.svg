@@ -27,32 +27,36 @@
 <line x1="40" y1="950" x2="50" y2="950" stroke="black" />
 <text x="10" y="955" font-size="12">0.0</text>
 <line x1="40" y1="860" x2="50" y2="860" stroke="black" />
-<text x="10" y="865" font-size="12">6.0</text>
+<text x="10" y="865" font-size="12">4.0</text>
 <line x1="40" y1="770" x2="50" y2="770" stroke="black" />
-<text x="10" y="775" font-size="12">12.0</text>
+<text x="10" y="775" font-size="12">8.0</text>
 <line x1="40" y1="680" x2="50" y2="680" stroke="black" />
-<text x="10" y="685" font-size="12">18.0</text>
+<text x="10" y="685" font-size="12">12.0</text>
 <line x1="40" y1="590" x2="50" y2="590" stroke="black" />
-<text x="10" y="595" font-size="12">24.0</text>
+<text x="10" y="595" font-size="12">16.0</text>
 <line x1="40" y1="500" x2="50" y2="500" stroke="black" />
-<text x="10" y="505" font-size="12">30.0</text>
+<text x="10" y="505" font-size="12">20.0</text>
 <line x1="40" y1="410" x2="50" y2="410" stroke="black" />
-<text x="10" y="415" font-size="12">36.0</text>
+<text x="10" y="415" font-size="12">24.0</text>
 <line x1="40" y1="320" x2="50" y2="320" stroke="black" />
-<text x="10" y="325" font-size="12">42.0</text>
+<text x="10" y="325" font-size="12">28.0</text>
 <line x1="40" y1="230" x2="50" y2="230" stroke="black" />
-<text x="10" y="235" font-size="12">48.0</text>
+<text x="10" y="235" font-size="12">32.0</text>
 <line x1="40" y1="140" x2="50" y2="140" stroke="black" />
-<text x="10" y="145" font-size="12">54.0</text>
+<text x="10" y="145" font-size="12">36.0</text>
 <line x1="40" y1="50" x2="50" y2="50" stroke="black" />
-<text x="10" y="55" font-size="12">60.0</text>
+<text x="10" y="55" font-size="12">40.0</text>
 <text x="910" y="995" text-anchor="middle">X-Achse</text>
 <text x="200" y="275" transform="rotate(-90 20,275)" text-anchor="middle">Y-Achse</text>
-<circle cx="95" cy="920" r="3" fill="blue" />
-<text x="105" y="920" font-size="8">P1 (2.0, 2.0)</text>
-<circle cx="342" cy="845" r="3" fill="blue" />
-<text x="352" y="845" font-size="8">P2 (13.0, 7.0)</text>
-<circle cx="747" cy="110" r="3" fill="blue" />
-<text x="757" y="110" font-size="8">P3 (31.0, 56.0)</text>
-<line x1="50" y1="1072.659409" x2="838.138234" y2="50.000000" stroke="red" stroke-width="2" />
+<circle cx="72" cy="882" r="3" fill="blue" />
+<text x="82" y="882" font-size="8">P1 (1.0, 3.0)</text>
+<circle cx="95" cy="860" r="3" fill="blue" />
+<text x="105" y="860" font-size="8">P2 (2.0, 4.0)</text>
+<circle cx="162" cy="882" r="3" fill="blue" />
+<text x="172" y="882" font-size="8">P3 (5.0, 3.0)</text>
+<circle cx="770" cy="50" r="3" fill="blue" />
+<text x="780" y="50" font-size="8">P4 (32.0, 40.0)</text>
+<circle cx="162" cy="837" r="3" fill="blue" />
+<text x="172" y="837" font-size="8">P5 (5.0, 5.0)</text>
+<line x1="50" y1="953.672107" x2="778.558612" y2="50.000000" stroke="red" stroke-width="2" />
 </svg>
