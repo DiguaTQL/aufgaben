@@ -9,7 +9,7 @@ struct persontyp
     long gebdat;
     void print(void)
     {
-        printf( "Nachname : %s \nVorname : %s \nGeb.-Dat.:%02i .%02i .%04i \n",nachname , vorname , gebdat%100, gebdat/100%100 ,gebdat/10000);
+        printf( "Nachname : %s \nVorname : %s \nGeb.-Dat.:%02i.%02i.%04i \n",nachname , vorname , gebdat%100, gebdat/100%100 ,gebdat/10000);
     }
 
     void  init(const char *nn , const char *vn , long gd)
