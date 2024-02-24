@@ -9,8 +9,8 @@ struct aufzeichnungstyp
     int dauer_in_sec;
     char ort[200];
     char thema[200];
+
     public:
-    //void setze_zeitpunkt()
     void init(int neu_dauer,const char *neu_ort,const char *neu_thema);
     void setze_zeitpunkt(int tag,int mon,int jahr);
     void print(void);
@@ -19,11 +19,9 @@ struct aufzeichnungstyp
 
 void aufzeichnungstyp::init(int neu_dauer,const char *neu_ort,const char *neu_thema)
 {
-    //struct aufzeichnungstyp erg={0};
     dauer_in_sec=neu_dauer;
     strncat(ort,neu_ort,sizeof(ort)-1);
     strncat(thema,neu_thema,sizeof(thema)-1);
-    //return erg;
 }
 
  
