@@ -4,44 +4,48 @@
  
 struct aufzeichnungstyp
 {
+    private:
     time_t zeitpunkt;
     int dauer_in_sec;
     char ort[200];
     char thema[200];
-
+    public:
     //void setze_zeitpunkt()
-    void setze_zeitpunkt(struct aufzeichnungstyp *paufz,int tag,int mon,int jahr);
-    void print(struct aufzeichnungstyp aufz)
+    void init(int neu_dauer,const char *neu_ort,const char *neu_thema);
+    void setze_zeitpunkt(int tag,int mon,int jahr);
+    void print(void);
 };
- 
-struct aufzeichnungstyp init(int neu_dauer,const char *neu_ort,const char *neu_thema)
+
+
+void aufzeichnungstyp::init(int neu_dauer,const char *neu_ort,const char *neu_thema)
 {
-    struct aufzeichnungstyp erg={0};
-    erg.dauer_in_sec=neu_dauer;
-    strncat(erg.ort,neu_ort,sizeof(erg.ort)-1);
-    strncat(erg.thema,neu_thema,sizeof(erg.thema)-1);
-    return erg;
+    //struct aufzeichnungstyp erg={0};
+    dauer_in_sec=neu_dauer;
+    strncat(ort,neu_ort,sizeof(ort)-1);
+    strncat(thema,neu_thema,sizeof(thema)-1);
+    //return erg;
 }
+
  
-aufzeichnungstyp::setze_zeitpunkt(struct aufzeichnungstyp *paufz,int tag,int mon,int jahr)
+void aufzeichnungstyp::setze_zeitpunkt(int tag,int mon,int jahr)
 {
     struct tm zeit_rec={0,0,0,tag,mon-1,jahr-1900};
-    (*paufz).zeitpunkt=mktime(&zeit_rec);//paufz−>zeitpunkt=...
+    zeitpunkt=mktime(&zeit_rec);//paufz−>zeitpunkt=...
 }
  
-aufzeichnungstyp::print(struct aufzeichnungstyp aufz)
+void aufzeichnungstyp::print()
 {
-    printf("Thema....: %s\n",aufz.thema);
-    printf("Zeitpunkt: %s",ctime(&aufz.zeitpunkt));
-    printf("Ort......: %s\n",aufz.ort);
-    printf("Dauer....: %i Sekunden\n",aufz.dauer_in_sec);
+    printf("Thema....: %s\n",thema);
+    printf("Zeitpunkt: %s",ctime(&zeitpunkt));
+    printf("Ort......: %s\n",ort);
+    printf("Dauer....: %i Sekunden\n",dauer_in_sec);
 }
  
 int main(void)
 {
     struct aufzeichnungstyp aktuelle_doku;
-    aktuelle_doku=init(40,"Bremen","Weser-Hochwasser␣Dez.␣2023");
-    aktuelle_doku.setze_zeitpunkt(&aktuelle_doku,29,12,2023);
-    aktuelle_doku.print(aktuelle_doku);
+    aktuelle_doku.init(40,"Bremen","Weser-Hochwasser␣Dez.␣2023");
+    aktuelle_doku.setze_zeitpunkt(29,12,2023);
+    aktuelle_doku.print();
     return 0;
 }
