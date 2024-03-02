@@ -7,6 +7,6 @@ int main(void){
     jetzt=time(NULL);
     getsec = mktime(&gt);
     printf("Sie sind %li Sek. alt.\n",jetzt-getsec);
-
+    printf("Ihr Geb.-Wochentag: %.2s\n",&"SoMoDiMiDoFrSa"[gt.tm_wday*2]);
     return 0;
 }
