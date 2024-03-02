@@ -38,7 +38,7 @@ void aufzeichnungstyp::print()
     printf("Ort......: %s\n",ort);
     printf("Dauer....: %i Sekunden\n",dauer_in_sec);
 }
- 
+
 int main(void)
 {
     struct aufzeichnungstyp aktuelle_doku;
