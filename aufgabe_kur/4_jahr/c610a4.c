@@ -8,7 +8,7 @@ int main(void){
     int x=0,y=0;
 
     t=time(NULL);
-    setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "de_De");
     jetzt=time(NULL);
     printf("Datum eingeben:\n");
     printf("Tage......:");
@@ -30,7 +30,7 @@ int main(void){
     strftime(anz, 80, "%d. %B %Y um %H:%M Uhr", localtime(&jetzt));
     strftime(anz2, 80, "%d. %B %Y um %H:%M Uhr", localtime(&jetzt));
     printf("%s\n",anz2);
-    printf("Betriebszeit : %d.%d.%d, %d Uhr bis %s\n",start.tm_mday,x,y,start.tm_hour,anz);
+    printf("Betriebszeit : %02d.%02d.%04d, %02d Uhr bis %s\n",start.tm_mday,x,y,start.tm_hour,anz);
     printf("Betriebsdauer (aufgerundet): %lf Stunden\n",diff);
 
     return 0;
