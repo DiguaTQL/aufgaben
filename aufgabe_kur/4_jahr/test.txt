@@ -1,0 +1,552 @@
+Register:---------------$GPRMC
+Zeitstempel:------------07:33:53 AM
+Breitengrad:------------5230.6199
+Ausrichtung:------------N
+Laengengrad:------------01312.7848
+Ausrichtung:------------E
+Datum:------------------05/14/2008
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:33:54 AM
+Breitengrad:------------5230.6199
+Ausrichtung:------------N
+Laengengrad:------------01312.7848
+Ausrichtung:------------E
+Datum:------------------05/14/2008
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:33:55 AM
+Breitengrad:------------5230.6199
+Ausrichtung:------------N
+Laengengrad:------------01312.7848
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:33:56 AM
+Breitengrad:------------5230.6199
+Ausrichtung:------------N
+Laengengrad:------------01312.7848
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:33:57 AM
+Breitengrad:------------5230.6199
+Ausrichtung:------------N
+Laengengrad:------------01312.7848
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:33:58 AM
+Breitengrad:------------5230.6199
+Ausrichtung:------------N
+Laengengrad:------------01312.7848
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:33:59 AM
+Breitengrad:------------5230.6199
+Ausrichtung:------------N
+Laengengrad:------------01312.7848
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:00 AM
+Breitengrad:------------5230.6199
+Ausrichtung:------------N
+Laengengrad:------------01312.7848
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:01 AM
+Breitengrad:------------5230.6199
+Ausrichtung:------------N
+Laengengrad:------------01312.7848
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:02 AM
+Breitengrad:------------5201.3221
+Ausrichtung:------------N
+Laengengrad:------------00832.9936
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:03 AM
+Breitengrad:------------5201.3329
+Ausrichtung:------------N
+Laengengrad:------------00832.9535
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:04 AM
+Breitengrad:------------5201.3318
+Ausrichtung:------------N
+Laengengrad:------------00832.9653
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:05 AM
+Breitengrad:------------5201.3374
+Ausrichtung:------------N
+Laengengrad:------------00832.9438
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:06 AM
+Breitengrad:------------5201.3365
+Ausrichtung:------------N
+Laengengrad:------------00832.9485
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:07 AM
+Breitengrad:------------5201.3347
+Ausrichtung:------------N
+Laengengrad:------------00832.9390
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:08 AM
+Breitengrad:------------5201.3350
+Ausrichtung:------------N
+Laengengrad:------------00832.9513
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:09 AM
+Breitengrad:------------5201.3320
+Ausrichtung:------------N
+Laengengrad:------------00832.9583
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:10 AM
+Breitengrad:------------5201.3370
+Ausrichtung:------------N
+Laengengrad:------------00832.9681
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:11 AM
+Breitengrad:------------5201.3318
+Ausrichtung:------------N
+Laengengrad:------------00832.9634
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:12 AM
+Breitengrad:------------5201.3349
+Ausrichtung:------------N
+Laengengrad:------------00832.9572
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:13 AM
+Breitengrad:------------5201.3399
+Ausrichtung:------------N
+Laengengrad:------------00832.9358
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:14 AM
+Breitengrad:------------5201.3404
+Ausrichtung:------------N
+Laengengrad:------------00832.9375
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:15 AM
+Breitengrad:------------5201.3398
+Ausrichtung:------------N
+Laengengrad:------------00832.9390
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:16 AM
+Breitengrad:------------5201.3394
+Ausrichtung:------------N
+Laengengrad:------------00832.9395
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:17 AM
+Breitengrad:------------5201.3392
+Ausrichtung:------------N
+Laengengrad:------------00832.9393
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:18 AM
+Breitengrad:------------5201.3394
+Ausrichtung:------------N
+Laengengrad:------------00832.9395
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:19 AM
+Breitengrad:------------5201.3395
+Ausrichtung:------------N
+Laengengrad:------------00832.9397
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:20 AM
+Breitengrad:------------5201.3395
+Ausrichtung:------------N
+Laengengrad:------------00832.9397
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:21 AM
+Breitengrad:------------5201.3395
+Ausrichtung:------------N
+Laengengrad:------------00832.9396
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:22 AM
+Breitengrad:------------5201.3394
+Ausrichtung:------------N
+Laengengrad:------------00832.9396
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:23 AM
+Breitengrad:------------5201.3395
+Ausrichtung:------------N
+Laengengrad:------------00832.9396
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:24 AM
+Breitengrad:------------5201.3394
+Ausrichtung:------------N
+Laengengrad:------------00832.9395
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:25 AM
+Breitengrad:------------5201.3394
+Ausrichtung:------------N
+Laengengrad:------------00832.9395
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:26 AM
+Breitengrad:------------5201.3394
+Ausrichtung:------------N
+Laengengrad:------------00832.9395
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:27 AM
+Breitengrad:------------5201.3392
+Ausrichtung:------------N
+Laengengrad:------------00832.9393
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:28 AM
+Breitengrad:------------5201.3390
+Ausrichtung:------------N
+Laengengrad:------------00832.9390
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:29 AM
+Breitengrad:------------5201.3388
+Ausrichtung:------------N
+Laengengrad:------------00832.9388
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:30 AM
+Breitengrad:------------5201.3387
+Ausrichtung:------------N
+Laengengrad:------------00832.9386
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:31 AM
+Breitengrad:------------5201.3386
+Ausrichtung:------------N
+Laengengrad:------------00832.9384
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:32 AM
+Breitengrad:------------5201.3386
+Ausrichtung:------------N
+Laengengrad:------------00832.9384
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:33 AM
+Breitengrad:------------5201.3385
+Ausrichtung:------------N
+Laengengrad:------------00832.9383
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:34 AM
+Breitengrad:------------5201.3384
+Ausrichtung:------------N
+Laengengrad:------------00832.9382
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:35 AM
+Breitengrad:------------5201.3383
+Ausrichtung:------------N
+Laengengrad:------------00832.9381
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:36 AM
+Breitengrad:------------5201.3382
+Ausrichtung:------------N
+Laengengrad:------------00832.9380
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:37 AM
+Breitengrad:------------5201.3382
+Ausrichtung:------------N
+Laengengrad:------------00832.9380
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:38 AM
+Breitengrad:------------5201.3381
+Ausrichtung:------------N
+Laengengrad:------------00832.9379
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:39 AM
+Breitengrad:------------5201.3380
+Ausrichtung:------------N
+Laengengrad:------------00832.9378
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:40 AM
+Breitengrad:------------5201.3380
+Ausrichtung:------------N
+Laengengrad:------------00832.9377
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:41 AM
+Breitengrad:------------5201.3380
+Ausrichtung:------------N
+Laengengrad:------------00832.9377
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:42 AM
+Breitengrad:------------5201.3380
+Ausrichtung:------------N
+Laengengrad:------------00832.9377
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:43 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:44 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:45 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:46 AM
+Breitengrad:------------5201.3380
+Ausrichtung:------------N
+Laengengrad:------------00832.9377
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:47 AM
+Breitengrad:------------5201.3380
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:48 AM
+Breitengrad:------------5201.3380
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:49 AM
+Breitengrad:------------5201.3380
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:50 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:51 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:52 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:53 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:54 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:55 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:56 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:57 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:58 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:34:59 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:35:00 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+
+Register:---------------$GPRMC
+Zeitstempel:------------07:35:01 AM
+Breitengrad:------------5201.3379
+Ausrichtung:------------N
+Laengengrad:------------00832.9376
+Ausrichtung:------------E
+Datum:------------------08/25/2004
+

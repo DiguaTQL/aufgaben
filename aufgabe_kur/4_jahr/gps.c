@@ -39,7 +39,7 @@ void isdatum (char* tok)
 {
     time_t stempel = time(NULL);            //Zeitstempel
     struct tm akt = *localtime(&stempel);   //Record aus time.h
-    char datum[100];                         //Zeitstring
+    char datum[100]="";                         //Zeitstring
     char zeitstempel[10], tags[3], monats[3], jahrs[3];
     
     memcpy(zeitstempel,tok,6);

@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
-struct punkttyp
+class punkttyp
 {
     double x,y;
+    public:
     void scanfpunkt(void)
     {
     	printf("x:");
@@ -14,14 +15,14 @@ struct punkttyp
     }
     void printfpunkt(void)
     {
+        x= x*2;
         printf("%g, %g\n", x, y);
     }
 };
 int main(void)
 {
-    struct punkttyp a;
+    class punkttyp a;
     a.scanfpunkt();
-    a.x = a.x * 2;
     a.printfpunkt();
     return 0;
 }
